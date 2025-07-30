@@ -1,7 +1,6 @@
-
 これをやっていく。：https://github.com/modelcontextprotocol/python-sdk
 
-1. uvをbrewでインストール
+1. uv を brew でインストール
 
 ```
 $brew install uv
@@ -14,6 +13,7 @@ uv 0.8.3 (Homebrew 2025-07-24)
 ```
 
 2. プロジェクトを追加
+
 ```
 uv init mcp-server-demo
 cd mcp-server-demo
@@ -63,10 +63,11 @@ Installed **33 packages** in 42ms
  + **typing-inspection**==0.4.1
  + **uvicorn**==0.35.0
 ```
+
 4. 以下を mcp-server-demo に追加
 
-
 server.py
+
 ```
 """
 FastMCP quickstart example.
@@ -113,7 +114,7 @@ styles = {
 return f"{styles.get(style, styles['friendly'])} for someone named {name}."
 ```
 
-5. 以下を実行してClaude Desktopに追加
+5. 以下を実行して Claude Desktop に追加
 
 ```
 uv run mcp install server.py
