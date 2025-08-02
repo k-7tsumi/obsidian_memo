@@ -1,0 +1,1 @@
+- よくECSを分かっていない。：https://zenn.dev/mi_01_24fu/articles/aws-ecs-2024_03_18
