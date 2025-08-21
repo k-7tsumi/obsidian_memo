@@ -1,27 +1,5 @@
-## 企業研究
-
-- 応募しているポジション：https://herp.careers/v1/govtechtokyo/3E52dI6wt5Ik
-	- RAGとは：https://qiita.com/Junpei_Takagi/items/f82d31323f00ad895579
-	- RAGとは②： https://www.youtube.com/watch?v=NoM2JdOnYsA
-	- Viteとは：https://zenn.dev/comm_vue_nuxt/articles/what-is-vite
-	- Honoとは：https://qiita.com/TA-YO/items/8e2c9ba393f4d9996153
-- GovTech東京のnote：https://note.govtechtokyo.jp/
-- GovTech東京の記事①：https://reskill.nikkei.com/article/DGXZQOLM1660X0W4A210C2000000/
-- GovTech東京の記事②：https://www.iais.or.jp/ais_online/online-articles/20240109/202401_01/
-- GovTech東京の記事③：[https://say-yosoro.com/article/20231019/](https://say-yosoro.com/article/20231019/)
-- 生成AIに関する記事①：https://zenn.dev/govtechtokyo/articles/0a733fa96899a4
-- 生成AIに関する記事②：https://www.govtechtokyo.or.jp/services/gen-ai-platform/
-
-
-### 気を付けた方が良さそうなポイント
-- AIはAI医療相談サービスの経験をちゃんと言語化できるようにしておこう。
-- 無職時期のAI何を勉強したかも言語化できないとやばそう。(勉強した内容復習する。)
-- ReactとNext.jsのメリット・デメリットを言語化しておこう。(Next.js忘れた。。)
-- ユーザなど、非エンジニアとのコミュニケーション能力は問われそう。。
-
 ## 面接対策
 
-参照：https://zenn.dev/setsu/articles/2fab0896d0764a
 ### 基本系
 
 - 自己紹介
@@ -66,7 +44,7 @@
 5. **トークン交換**: アプリケーションが認可コードをアクセストークンに交換
 6. **リソースアクセス**: トークンを使ってユーザー情報を取得し、ログイン完了
 
-## AI系(21日)
+## AI系
 - 退職してからAIで学習した内容について教えてください。
 	- 退職期間中は、実務でのAI活用経験を基にさらに深く学習し、カンファレンスなどで情報収集しながら、実際に手を動かしながら各AIツールの知識を深めていました。 まず、ローコードAIツールの活用として、Difyを使ったワークフロー構築を学びました。具体的には、Gemini 2.5 ProのVision機能を活用してレシートの画像から購入商品情報を抽出し、Google Apps Scriptと連携してスプレッドシートに自動転記するアプリを開発しました。さらに、購入した野菜の消費期限をSlackでリマインドする機能も追加し、日常生活の課題をAIで解決するプロダクトとして仕上げました。 次に、最新のAI開発ツールの実践学習です。AnthropicのClaudeCodeやGoogleのGemini CLIなど、AI支援開発ツールを積極的に試し、MCPサーバーとの連携設定やSlack通知の自動化なども実装しました。 最後に、プロンプトエンジニアリングとマルチモーダルAIの分野では、画像認識精度の比較検証や、JSONフォーマットでの確実な出力を得るための詳細なプロンプト設計技術を学びました。
 - AI医療相談サービスを開発する上で気をつけた点・苦労した点
