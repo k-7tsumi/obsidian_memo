@@ -21,87 +21,80 @@ pip install llama-index
 export OPENAI_API_KEY=XXXXX
 ```
 
-【次やること】以下スクリプトで実行してみる(TypeScript)
-
+3. 以下スクリプトを実行(Python)
 ```
-import { OpenAI } from "llamaindex";
-import { FunctionTool, OpenAIAgent } from "llamaindex";
+import asyncio
+from llama_index.core.agent.workflow import FunctionAgent
+from llama_index.llms.openai import OpenAI
 
-// Define a simple calculator tool
-const multiplyTool = new FunctionTool(
-  async ({ a, b }: { a: number; b: number }): Promise<number> => {
-    return a * b;
-  },
-  {
-    name: "multiply",
-    description: "Useful for multiplying two numbers.",
-    parameters: {
-      type: "object",
-      properties: {
-        a: {
-          type: "number",
-          description: "First number to multiply",
-        },
-        b: {
-          type: "number",
-          description: "Second number to multiply",
-        },
-      },
-      required: ["a", "b"],
-    },
-  }
-);
 
-async function main(): Promise<void> {
-  try {
-    // Create an OpenAI LLM instance
-    const llm = new OpenAI({
-      model: "gpt-4o-mini",
-    });
+# Define a simple calculator tool
+def multiply(a: float, b: float) -> float:
+    """Useful for multiplying two numbers."""
+    return a * b
 
-    // Create an agent with our calculator tool
-    const agent = new OpenAIAgent({
-      tools: [multiplyTool],
-      llm: llm,
-      systemPrompt: "You are a helpful assistant that can multiply two numbers.",
-    });
 
-    // Run the agent
-    const response = await agent.chat({
-      message: "What is 1234 * 4567?",
-    });
+# Create an agent workflow with our calculator tool
+agent = FunctionAgent(
+    tools=[multiply],
+    llm=OpenAI(model="gpt-4o-mini"),
+    system_prompt="You are a helpful assistant that can multiply two numbers.",
+)
 
-    console.log(response.message.content);
-  } catch (error) {
-    console.error("Error:", error);
-  }
-}
 
-// Run the agent
-main().catch(console.error);
+async def main():
+    # Run the agent
+    response = await agent.run("What is 1234 * 4567?")
+    print(str(response))
+
+
+# Run the agent
+if __name__ == "__main__":
+    asyncio.run(main())
 ```
 
-packege.json
+コンテキストを追加したバージョン
 
 ```
-{
-  "name": "llamaindex-typescript-agent",
-  "version": "1.0.0",
-  "description": "LlamaIndex TypeScript agent with calculator tool",
-  "main": "index.ts",
-  "scripts": {
-    "start": "tsx index.ts",
-    "build": "tsc",
-    "dev": "tsx watch index.ts"
-  },
-  "dependencies": {
-    "llamaindex": "^0.6.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "tsx": "^4.0.0",
-    "typescript": "^5.0.0"
-  },
-  "type": "module"
-}
+import asyncio
+from llama_index.core.agent.workflow import FunctionAgent
+from llama_index.core.workflow import Context
+from llama_index.llms.openai import OpenAI
+
+# Define a simple calculator tool
+def multiply(a: float, b: float) -> float:
+    “”"Useful for multiplying two numbers.“”"
+    return a * b
+
+# Create an agent workflow with our calculator tool
+agent = FunctionAgent(
+    tools=[multiply],
+    llm=OpenAI(model=“gpt-4o-mini”),
+    system_prompt=“You are a helpful assistant that can multiply two numbers.“,
+)
+
+async def main():
+    # Create context
+    ctx = Context(agent)
+
+    # Set up context with user information
+    response = await agent.run(“My name is Logan and I prefer calculations in scientific notation.“, ctx=ctx)
+    print(“Setting up context:“)
+    print(str(response))
+    print(“\n” + “=”*50 + “\n”)
+
+    # Test with context - should remember preference and name
+    response = await agent.run(“What is 1234 * 4567? Please format according to my preference.“, ctx=ctx)
+    print(“With context (remembers name and preference):“)
+    print(str(response))
+    print(“\n” + “=”*50 + “\n”)
+
+    # Test without context for comparison
+    response_no_context = await agent.run(“What is 1234 * 4567? Please format according to my preference.“)
+    print(“Without context (no memory of preference):“)
+    print(str(response_no_context))
+
+# Run the agent
+if __name__ == “__main__“:
+    asyncio.run(main())
 ```
