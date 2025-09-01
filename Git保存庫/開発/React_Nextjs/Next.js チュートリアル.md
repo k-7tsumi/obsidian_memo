@@ -18,5 +18,11 @@ v22.16.0
 - jsxの3つのルール：https://ja.react.dev/learn/writing-markup-with-jsx#the-rules-of-jsx
 - Reactコンポーネントは通常のHTMLタグと同じように、山括弧`<>`を使って使用します。
 - プロパティ = 属性と暫定で考える。
+- アロー関数とそうでないものの特性の違いを忘れた。調べよう。
+	- アロー関数式を使えば、「function」を書かなくて済むため、今までより短く関数を記述することができます。
+	- 結論を言いますと、アロー関数式で宣言された関数は、宣言された時点で、thisを確定（＝束縛）させてしまうのです。
+	- https://qiita.com/mejileben/items/69e5facdb60781927929
+	- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+- bind関数ものちのち調べよう。
 
-次はここから：https://ja.nextjs.im/learn/react-foundations/displaying-data-with-props#using-props
+次はここから：https://ja.nextjs.im/learn/react-foundations/displaying-data-with-props#iterating-through-lists
