@@ -16,5 +16,7 @@ v22.16.0
 - createRoot：https://react.dev/reference/react-dom/client/createRoot
 - 本当にエラー出た。Uncaught SyntaxError: Unexpected token '<'
 - jsxの3つのルール：https://ja.react.dev/learn/writing-markup-with-jsx#the-rules-of-jsx
+- Reactコンポーネントは通常のHTMLタグと同じように、山括弧`<>`を使って使用します。
+- プロパティ = 属性と暫定で考える。
 
-次は https://ja.react.dev/learn/writing-markup-with-jsx#the-rules-of-jsx から。
+次はここから：https://ja.nextjs.im/learn/react-foundations/displaying-data-with-props#using-props
