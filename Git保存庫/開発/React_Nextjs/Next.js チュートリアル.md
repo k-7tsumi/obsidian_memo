@@ -24,5 +24,10 @@ v22.16.0
 	- https://qiita.com/mejileben/items/69e5facdb60781927929
 	- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 - bind関数ものちのち調べよう。
+- keyの警告。Warning: Each child in a list should have a unique "key" prop.
+- フックについて：https://ja.react.dev/learn#using-hooks
+- useState：https://ja.react.dev/reference/react/useState
+- コンポーネントのトップ部分：「トップレベル」= コンポーネント関数の中で、条件やループに囲まれていない直接実行される部分
+- package.jsonとは：https://qiita.com/xxseagullxx/items/4e1a0158028cf2348d21
 
-次はここから：https://ja.nextjs.im/learn/react-foundations/displaying-data-with-props#iterating-through-lists
+次はここから：https://ja.nextjs.im/learn/react-foundations/installation
