@@ -29,5 +29,18 @@ v22.16.0
 - useState：https://ja.react.dev/reference/react/useState
 - コンポーネントのトップ部分：「トップレベル」= コンポーネント関数の中で、条件やループに囲まれていない直接実行される部分
 - package.jsonとは：https://qiita.com/xxseagullxx/items/4e1a0158028cf2348d21
+- jsxとは：https://zenn.dev/sanpi34/articles/9b99b81216b585
+- Next.jsはファイルシステムベースのルーティングを使用します。これは、アプリケーションのルートをコードで定義する代わりに、フォルダとファイルを使用できることを意味します。
+- `export default`を追加して、Next.jsがページのメインコンポーネントとしてレンダリングするコンポーネントを識別できるようにします。
+	- `export default` について： https://qiita.com/gnash/items/ce9265751067c33167c6
 
-次はここから：https://ja.nextjs.im/learn/react-foundations/installation
+エラー
+
+![[スクリーンショット 2025-09-03 14.22.11.png]]
+- これは、Next.jsがReactサーバーコンポーネントを使用しているためです。サーバーコンポーネントは`useState`をサポートしていないため、代わりにクライアントコンポーネントを使用する必要があります。
+
+- Next.jsは**App Router**（バージョン13以降のデフォルト）を使用している場合、必要な基本ファイルが存在しないと、開発サーバー起動時に**自動的に作成**します。(next devコマンド実行時)
+
+### サーバーコンポーネントとクライアントコンポーネント
+
+次はここから：https://ja.nextjs.im/learn/react-foundations/server-and-client-components#server-and-client-environments
