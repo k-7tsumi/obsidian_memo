@@ -42,5 +42,10 @@ v22.16.0
 - Next.jsは**App Router**（バージョン13以降のデフォルト）を使用している場合、必要な基本ファイルが存在しないと、開発サーバー起動時に**自動的に作成**します。(next devコマンド実行時)
 
 ### サーバーコンポーネントとクライアントコンポーネント
-
-次はここから：https://ja.nextjs.im/learn/react-foundations/server-and-client-components#server-and-client-environments
+- インタラクティブとは、双方向性。
+- Reactでは、コンポーネントツリー内のどこにネットワーク境界を配置するかを選択できます。
+- 全然分からん。知らん情報が出てくる。
+- Reactサーバーコンポーネントペイロード（RSC）とは：https://ja.nextjs.im/learn/react-foundations/server-and-client-components#server-and-client-environments
+- Next.jsはデフォルトでサーバーコンポーネントを使用します。（そうなんだ。）
+- ファイルの先頭にReactの`'use client'`ディレクティブを追加します。これにより、Reactはこのコンポーネントをクライアント上でレンダリングします。
+- use clientとは：https://ja.nextjs.im/docs/app/api-reference/directives/use-client
