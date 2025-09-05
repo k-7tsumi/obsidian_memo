@@ -1,6 +1,7 @@
 - ドキュメント：https://nextjsjp.org
 - Reactの復習をする場合：https://ja.nextjs.im/learn/react-foundations
 ## メモ
+### React基礎
 - App RouterとPages Routerの2種類のルーターがあります。
 	- 違いが全く分からん。
 - Node.jsのバージョンOK(Reactのチュートリアルやるのに。)
@@ -49,3 +50,24 @@ v22.16.0
 - Next.jsはデフォルトでサーバーコンポーネントを使用します。（そうなんだ。）
 - ファイルの先頭にReactの`'use client'`ディレクティブを追加します。これにより、Reactはこのコンポーネントをクライアント上でレンダリングします。
 - use clientとは：https://ja.nextjs.im/docs/app/api-reference/directives/use-client
+- Claudeに聞いたサーバーコンポーネントとクライアントコンポーネントを分けるメリット
+
+```
+## なぜ分ける必要があるのか？
+
+**パフォーマンスの最適化**
+
+- 静的なコンテンツはサーバーで処理して初期表示を高速化
+- 動的な部分のみクライアント側で処理してインタラクション性を保つ
+```
+- First Reflesh：https://ja.nextjs.im/docs/architecture/fast-refresh
+
+### App Router
+- AppRouterチュートリアル： https://ja.nextjs.im/learn/dashboard-app
+- pnpmとは：https://zenn.dev/cloud_ace/articles/articlejs-package-manager-pnpm
+- npmとnpxの違い：https://qiita.com/kohta9521/items/ee3ed4a2360add80ad79#npx
+
+以下コマンドを実行
+```
+$npx create-next-app@latest nextjs-dashboard --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example" --use-pnpm
+```
