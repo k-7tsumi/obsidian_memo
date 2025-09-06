@@ -75,4 +75,7 @@ $npx create-next-app@latest nextjs-dashboard --example "https://github.com/verce
 - プロジェクトのパッケージをインストールするには`pnpm i`を実行します。
 - next dev --turbopackは、**Next.jsの開発サーバーをTurbopack（新しい高速バンドラー）で起動**するコマンド。(デフォルトはwebpack)
 
-次はここから：https://ja.nextjs.im/learn/dashboard-app/css-styling
+- [CSS モジュール](https://ja.nextjs.im/docs/basic-features/built-in-css-support) は、一意のクラス名を自動的に作成することで CSS をコンポーネントにスコープするため、スタイルの衝突を心配する必要もありません。
+	- 言葉の意味が分からない。
+
+次はここから：https://ja.nextjs.im/learn/dashboard-app/optimizing-fonts-images
