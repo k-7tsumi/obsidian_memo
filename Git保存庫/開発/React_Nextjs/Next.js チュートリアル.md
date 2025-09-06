@@ -71,3 +71,8 @@ v22.16.0
 ```
 $npx create-next-app@latest nextjs-dashboard --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example" --use-pnpm
 ```
+
+- プロジェクトのパッケージをインストールするには`pnpm i`を実行します。
+- next dev --turbopackは、**Next.jsの開発サーバーをTurbopack（新しい高速バンドラー）で起動**するコマンド。(デフォルトはwebpack)
+
+次はここから：https://ja.nextjs.im/learn/dashboard-app/css-styling
