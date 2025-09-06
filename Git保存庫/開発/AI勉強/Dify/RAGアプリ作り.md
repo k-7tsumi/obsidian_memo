@@ -9,3 +9,7 @@
 
 - Difyとnotionの繋げ方：https://note.com/jolly_dahlia842/n/n7b8b029316cd
 	- 一般市民も無料でnotionが使えるのかしら。→使えた。
+
+- Difyでテキストファイルからナレッジを作る方法：https://zenn.dev/headwaters/articles/e2cc40a31cdd11
+	- ↑のファイルだとCSVでやっている。
+	- CSVでいけた。
