@@ -16,3 +16,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 - [`print()`](https://docs.python.org/ja/3.13/library/functions.html#print "print") 関数を使うと、両端のクォートがなくなり、エスケープされた文字や特殊文字が表示されるため、より読みやすい形で出力できます。
 
 次はここから(連続して並んでいる複数の _文字列リテラル_ (つまり、引用符に囲われた文字列) は、自動的に連結されます。)：https://docs.python.org/ja/3.13/tutorial/introduction.html
+
+次は## 3.2. プログラミングへの第一歩：https://docs.python.org/ja/3.13/tutorial/introduction.html
