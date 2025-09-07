@@ -7,3 +7,5 @@
 	- https://github.com/astral-sh/uv
 - Qdrant(クワッドラント)とは：https://zenn.dev/tfutada/articles/acf8adbb2ba5be
 	- オープンソースのベクトル検索エンジン (Rust実装)
+- チャンク分割とは：https://promo.digital.ricoh.com/ai-for-work/column/detail012/
+- pyprojectとは: https://packaging.python.org/ja/latest/guides/writing-pyproject-toml/

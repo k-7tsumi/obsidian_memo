@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "8e7a1427a4e48c48",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e1427c1f339a63d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3139bd6d846f92a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "現場で活躍するためのAIエージェント実践入門"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9cdfec5661b13af7",
+    "type": "split",
+    "children": [
+      {
+        "id": "0dad50381a909518",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6624edfe9bf18a33",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "567f1647f79a8a74",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#転職活動レシピレコメンド用デー",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "44c6c3de0bb20c50",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 315.5
+  },
+  "right": {
+    "id": "7b90df38e253ec59",
+    "type": "split",
+    "children": [
+      {
+        "id": "0713970198b3413b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "79308a81669792d3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "デイリーノート/2025-06-10.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2025-06-10へのバックリンク"
+            }
+          },
+          {
+            "id": "b23b89db35579666",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "デイリーノート/2025-06-10.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2025-06-10からのアウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "b03ff5b4c717ae6a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "e11cde66a1c2c787",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "デイリーノート/2025-06-10.md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2025-06-10のアウトライン"
+            }
+          },
+          {
+            "id": "4163b793919bffe8",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 289.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kindle-plugin:Sync your Kindle highlights": false,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "recipe-view:Toggle recipe view": false
+    }
+  },
+  "active": "3139bd6d846f92a7",
+  "lastOpenFiles": [
+    "開発/AI勉強/Dify/Difyのドキュメント読む.md",
+    "開発/AI勉強/LlamIndexを触ってみる.md",
+    "開発/インフラ/Azure/Azureで何する？メモ.md",
+    "開発/インフラ/Azure",
+    "開発/Python/pythonチュートリアル.md",
+    "開発/インフラ",
+    "レシピ本集/毎日食べたい家パスタ365 - Ryogo.md",
+    "開発/AI勉強/Dify/RAGアプリ作り.md",
+    "開発/AI勉強/Dify/Dify触るTODO.md",
+    "開発/制限時間付きTODOアプリ/ECSメモ.md",
+    "開発/React_Nextjs/Next.js チュートリアル.md",
+    "レシピ本集/いちばんやさしい魚の食べ方 - 飛田和緒.md",
+    "デイリーノート/2025-09-07.md",
+    "小説/小説案①/メモ.md",
+    "デイリーノート/2025-09-06.md",
+    "開発/制限時間付きTODOアプリ/プロンプト1：アプリ作成.md",
+    "開発/ClaudeCodeSlack通知/メモ.md",
+    "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
+    "開発/AI勉強/AI技術書",
+    "レシピレコメンド用データ/レシピレコメンド用データ.md",
+    "レシピレコメンド用データ/レシピレコメンド用データ.csv",
+    "開発/Python",
+    "レシピレコメンド用データ",
+    "スクリーンショット 2025-09-06 0.31.50.png",
+    "スクリーンショット 2025-09-06 0.26.26.png",
+    "転職活動/GovTech東京/_GovTech東京_カジュアル面談ご参考資料_2507.pdf",
+    "転職活動/就活計画表.md",
+    "転職活動/1次面接対策.md",
+    "デイリーノート/2025-09-05.md",
+    "デイリーノート/2025-09-04.md",
+    "デイリーノート/2025-09-03.md",
+    "デイリーノート/2025-08-29.md",
+    "デイリーノート/2025-08-28.md",
+    "デイリーノート/2025-08-30.md",
+    "小説/小説案①",
+    "小説",
+    "スクリーンショット 2025-09-03 15.47.13.png",
+    "スクリーンショット 2025-09-03 15.44.00.png",
+    "スクリーンショット 2025-09-03 14.22.11.png",
+    "開発/AI勉強/Dify",
+    "スクリーンショット 2025-08-06 14.23.31.png",
+    "無題のファイル.canvas",
+    "スクリーンショット 2025-07-28 18.13.36.png",
+    "IMG_1094.jpg",
+    "IMG_1147.jpg",
+    "IMG_1144.jpg"
+  ]
+}
