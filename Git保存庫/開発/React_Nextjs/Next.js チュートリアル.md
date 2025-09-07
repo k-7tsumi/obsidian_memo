@@ -77,5 +77,10 @@ $npx create-next-app@latest nextjs-dashboard --example "https://github.com/verce
 
 - [CSS モジュール](https://ja.nextjs.im/docs/basic-features/built-in-css-support) は、一意のクラス名を自動的に作成することで CSS をコンポーネントにスコープするため、スタイルの衝突を心配する必要もありません。
 	- 言葉の意味が分からない。
+- Googleフォント：https://fonts.google.com/
+	- サブセットについて：https://fonts.google.com/knowledge/glossary/subsettingsx
+- `@`マークは、プロジェクトのルートディレクトリからの絶対パスを表すショートカットです。
+- レイアウトシフトとは、==ウェブページが表示されるまでに、画像や広告などの要素が読み込まれるタイミングの違いによって、ページの内容が突然ずれてしまう現象==のこと
+- ビューポートとは：https://www.codegrid.net/articles/viewport-1/
 
-次はここから：https://ja.nextjs.im/learn/dashboard-app/optimizing-fonts-images
+次はここから(デスクトップヒーロー画像の追加)：https://ja.nextjs.im/learn/dashboard-app/optimizing-fonts-images#adding-the-desktop-hero-image
