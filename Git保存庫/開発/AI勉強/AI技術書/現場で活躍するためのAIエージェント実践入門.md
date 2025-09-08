@@ -9,3 +9,11 @@
 	- オープンソースのベクトル検索エンジン (Rust実装)
 - チャンク分割とは：https://promo.digital.ricoh.com/ai-for-work/column/detail012/
 - pyprojectとは: https://packaging.python.org/ja/latest/guides/writing-pyproject-toml/
+- chapter4/notebooks/tools.ipynbは何するの。
+	- Jupyter notebookの機能らしい：https://www.internetacademy.co.jp/itlab/column-technology/python_stydy04.html
+- そうなんだ。
+```
+> ipynbという拡張子はなんですか？
+⏺ .ipynbは**IPython Notebook**の略で、Jupyter Notebookファイルの拡張子です。
+```
+- ipykernelとは：https://docs.kanaries.net/ja/topics/Python/ipykernel
