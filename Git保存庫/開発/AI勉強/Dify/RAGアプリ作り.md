@@ -14,7 +14,7 @@
 出力形式:
 - 料理名: [料理名]
 - 使用する材料: [材料リスト]  
-- レシピURL: [URL]
+- レシピ本名: [レシピ本名]
 
 複数の候補がある場合は、最大3つまで提案してください。
 ```
@@ -32,3 +32,8 @@
 - Dify でテキストファイルからナレッジを作る方法：https://zenn.dev/headwaters/articles/e2cc40a31cdd11
   - ↑ のファイルだと CSV でやっている。
   - CSV でいけた。
+  - DifyのRAGでの検索についてのドキュメント：https://docs.dify.ai/ja-jp/guides/knowledge-base/create-knowledge-and-upload-documents/setting-indexing-methods#setting-the-retrieval-setting
+  - OpenAIの埋め込みモデルの比較：https://zenn.dev/headwaters/articles/ebc3086bcf1b42
+	  - 使用するデータ量の少なさからtext-embedding-3-small (OpenAI)にしてみる。
+- インデックスを「高品質」に変えて、ベクトル検索にしたら検索できるようになった。
+	- 検索の種類を用途によって選べるようにならないと。

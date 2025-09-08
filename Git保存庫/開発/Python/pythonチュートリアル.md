@@ -17,4 +17,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 次はここから(連続して並んでいる複数の _文字列リテラル_ (つまり、引用符に囲われた文字列) は、自動的に連結されます。)：https://docs.python.org/ja/3.13/tutorial/introduction.html
 
-次は## 3.2. プログラミングへの第一歩：https://docs.python.org/ja/3.13/tutorial/introduction.html
+- `for` または `while` ループ中の `break` 文は `else` 節と対になる場合があります。`break` を実行せずにループが終了すると、`else` 節が実行されます。
+
+次はここから( 4.6. `pass` 文 )：https://docs.python.org/ja/3.13/tutorial/controlflow.html

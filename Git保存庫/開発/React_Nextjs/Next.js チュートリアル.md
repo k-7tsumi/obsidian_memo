@@ -82,5 +82,9 @@ $npx create-next-app@latest nextjs-dashboard --example "https://github.com/verce
 - `@`マークは、プロジェクトのルートディレクトリからの絶対パスを表すショートカットです。
 - レイアウトシフトとは、==ウェブページが表示されるまでに、画像や広告などの要素が読み込まれるタイミングの違いによって、ページの内容が突然ずれてしまう現象==のこと
 - ビューポートとは：https://www.codegrid.net/articles/viewport-1/
+- pnpm dev で開発サーバを立ち上げる。
+- Next.js では、**フォルダ**を使用してネストされたルートを作成するファイルシステムベースのルーティングが採用されています。各フォルダは、**URLセグメント**に対応する**ルートセグメント**を表します。
+- 各ルート用に個別のUIを作成するには、`layout.tsx` と `page.tsx` ファイルを使用します。
+- これがNext.jsで異なるページを作成する方法です: フォルダを使用して新しいルートセグメントを作成し、その中に `page` ファイルを追加します。
 
-次はここから(デスクトップヒーロー画像の追加)：https://ja.nextjs.im/learn/dashboard-app/optimizing-fonts-images#adding-the-desktop-hero-image
+次はここから(ダッシュボードレイアウトの作成 )：https://ja.nextjs.im/learn/dashboard-app/creating-layouts-and-pages

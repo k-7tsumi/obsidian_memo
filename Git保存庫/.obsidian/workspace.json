@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
+                "file": "開発/Python/pythonチュートリアル.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "現場で活躍するためのAIエージェント実践入門"
+              "title": "pythonチュートリアル"
             }
           }
         ]
@@ -185,6 +185,11 @@
   },
   "active": "3139bd6d846f92a7",
   "lastOpenFiles": [
+    "開発/AI勉強/Dify/RAGアプリ作り.md",
+    "開発/React_Nextjs/Next.js チュートリアル.md",
+    "デイリーノート/2025-09-07.md",
+    "デイリーノート/2025-09-08.md",
+    "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
     "開発/AI勉強/Dify/Difyのドキュメント読む.md",
     "開発/AI勉強/LlamIndexを触ってみる.md",
     "開発/インフラ/Azure/Azureで何する？メモ.md",
@@ -192,17 +197,13 @@
     "開発/Python/pythonチュートリアル.md",
     "開発/インフラ",
     "レシピ本集/毎日食べたい家パスタ365 - Ryogo.md",
-    "開発/AI勉強/Dify/RAGアプリ作り.md",
     "開発/AI勉強/Dify/Dify触るTODO.md",
     "開発/制限時間付きTODOアプリ/ECSメモ.md",
-    "開発/React_Nextjs/Next.js チュートリアル.md",
     "レシピ本集/いちばんやさしい魚の食べ方 - 飛田和緒.md",
-    "デイリーノート/2025-09-07.md",
     "小説/小説案①/メモ.md",
     "デイリーノート/2025-09-06.md",
     "開発/制限時間付きTODOアプリ/プロンプト1：アプリ作成.md",
     "開発/ClaudeCodeSlack通知/メモ.md",
-    "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
     "開発/AI勉強/AI技術書",
     "レシピレコメンド用データ/レシピレコメンド用データ.md",
     "レシピレコメンド用データ/レシピレコメンド用データ.csv",
