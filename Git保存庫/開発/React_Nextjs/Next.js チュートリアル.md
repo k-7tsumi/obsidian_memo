@@ -86,5 +86,9 @@ $npx create-next-app@latest nextjs-dashboard --example "https://github.com/verce
 - Next.js では、**フォルダ**を使用してネストされたルートを作成するファイルシステムベースのルーティングが採用されています。各フォルダは、**URLセグメント**に対応する**ルートセグメント**を表します。
 - 各ルート用に個別のUIを作成するには、`layout.tsx` と `page.tsx` ファイルを使用します。
 - これがNext.jsで異なるページを作成する方法です: フォルダを使用して新しいルートセグメントを作成し、その中に `page` ファイルを追加します。
+- ReactNodeとは：https://commte.net/reactnode
+- Next.jsでレイアウトを使用する利点の1つは、ナビゲーション時にページコンポーネントのみが更新され、レイアウトは再レンダリングされないことです。
+- **ルートレイアウト** は、ルート `app` ディレクトリ内の最上位のレイアウトです。`<html>` タグや `<body>` タグ、その他のグローバルに共有される UI を定義するために使用されます。
+- クライアントサイドナビゲーションとは：「ページ遷移をクライアント側のjavascript処理で実行し、サーバには通信を行わない」(ブラウザのみで処理が完結する。)
 
-次はここから(ダッシュボードレイアウトの作成 )：https://ja.nextjs.im/learn/dashboard-app/creating-layouts-and-pages
+次はここから：https://ja.nextjs.im/learn/dashboard-app/setting-up-your-database

@@ -17,3 +17,8 @@
 ⏺ .ipynbは**IPython Notebook**の略で、Jupyter Notebookファイルの拡張子です。
 ```
 - ipykernelとは：https://docs.kanaries.net/ja/topics/Python/ipykernel
+
+以下でchapter4/notebooks/tools.ipynbを実行できた。
+```
+$uv run python -c "from src.tools.search_xyz_manual import search_xyz_manual; result = search_xyz_manual.invoke('オンラインヘルプセンター'); print(result[0].content)"
+```
