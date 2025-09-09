@@ -17,3 +17,8 @@
 	- https://learn.microsoft.com/ja-jp/azure/ai-foundry/openai/how-to/create-resource?pivots=web-portal#configure-network-security
 - デプロイが始まった。よく分からない。
 - Azure OpenAIのトレーニング始めようかしら：https://learn.microsoft.com/ja-jp/training/browse/?terms=OpenAI
+- とりあえず実行してみよう。
+- Azure OpenAI APIのドキュメント：https://learn.microsoft.com/ja-jp/azure/ai-foundry/openai/how-to/responses?tabs=python-key&pivots=programming-language-python#prerequisites
+- pipとは、1. Pip installs Packagesの略。プログラミング言語のPythonで開発されたパッケージ管理システムの一つ
+	- https://qiita.com/vogel_als_prophet/items/fae486555a8fbaec58e1
+- Azure OpenAI モデルの操作(デプロイ)：https://learn.microsoft.com/ja-jp/azure/ai-foundry/openai/how-to/working-with-models?tabs=powershell

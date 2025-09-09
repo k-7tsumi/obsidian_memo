@@ -22,3 +22,7 @@
 ```
 $uv run python -c "from src.tools.search_xyz_manual import search_xyz_manual; result = search_xyz_manual.invoke('オンラインヘルプセンター'); print(result[0].content)"
 ```
+
+- RAGとロングコンテキストの比較：https://ledge.ai/articles/google_deepmind_lc-vs-rag
+- ロングコンテキストLLMとは：https://moji-inc.com/articles/long-context-llm
+	- たとえば、長い契約書の内容を一度に要約する場合、ロングコンテキストLLMでは全内容を一度に解析できますが、RAGでは契約書を分割して検索可能なチャンク（小単位）に分け、それを逐次的に参照します。この違いにより、ロングコンテキストLLMは情報の整合性が高い出力を期待できますが、大規模データの外部管理に優れたRAGと組み合わせて使うことで、さらに高度なシステムを構築できます。
