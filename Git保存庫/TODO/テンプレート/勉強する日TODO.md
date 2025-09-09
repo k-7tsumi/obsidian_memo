@@ -1,0 +1,5 @@
+- [ ] Next.js or React or TypeScript勉強30分
+- [ ] インフラ勉強30分(Azure)
+- [ ] AI勉強1時間
+- [ ] 基本情報技術者30分
+- [ ] Python30分
