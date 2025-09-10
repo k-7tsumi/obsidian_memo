@@ -16,8 +16,23 @@
 - **文脈理解**：文章全体の意味を理解
 ```
 #### Rerank設定
-- Rerank用のモデルを提供している「cohere」：https://cohere.com/
 - DifyのRerank設定について：https://qiita.com/pyon_kiti_jp/items/599040741ff988461077
 - RAGにおけるRerankモデルの役割と最新の動向：https://zenn.dev/shirochan/articles/06246f5bc8eb3d
 	- rerankモデルは、初期検索で得られた文書群の関連度を再評価し、LLMへの入力として適切な情報を選ぶことで、より質の高い回答生成をサポートします。
 	- 最初の検索で得られた候補文書を、より精密な方法で再評価します。単なるキーワード一致やベクトル類似性を超えて、セマンティックな関連性を評価します。
+##### topK
+> ユーザーの質問に最も類似したチャンクをフィルタリングするために使用されます。システムは、選択したモデルの max_tokens に応じて、動的に Top K の値を調整します。
+
+AIのテキスト生成や情報検索において、考えられる候補の中から確率が高い上位k個の選択肢のみを考慮する手法。
+
+- 他情報：https://qiita.com/takahirom/items/2618ade2bb4c74799e9b
+##### スコア閾値
+> チャンクフィルタリングの類似性閾値を設定するために使用されます。
+
+- デフォルト値は**0.5**
+- 値が高いほど生成するものに類似性の高さが要求されるため、取得できるチャンクが限られるようになる。その分類似性の高いものが返ってくる。
+##### Cohere(モデル)
+- Rerank用のモデルを提供している「cohere」：https://cohere.com/
+	- cohereとは：https://qiita.com/sergicalsix/items/d5c7a0a420a213309bfc
+- Rerankのモデルについて：https://zenn.dev/shirochan/articles/e5fd3d566864d5
+	- 最新は3.5。一旦これを使っておくのが無難。
