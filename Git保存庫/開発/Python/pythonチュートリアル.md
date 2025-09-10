@@ -19,5 +19,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 - `for` または `while` ループ中の `break` 文は `else` 節と対になる場合があります。`break` を実行せずにループが終了すると、`else` 節が実行されます。
 - Pythonのpass文とは：https://note.nkmk.me/python-pass-usage/
+- Pythonのスタイルガイド：https://peps.python.org/pep-0008/
 
 次はここから(4.9.1. デフォルトの引数値)：https://docs.python.org/ja/3.13/tutorial/controlflow.html
