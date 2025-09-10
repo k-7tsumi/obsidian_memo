@@ -90,5 +90,18 @@ $npx create-next-app@latest nextjs-dashboard --example "https://github.com/verce
 - Next.jsでレイアウトを使用する利点の1つは、ナビゲーション時にページコンポーネントのみが更新され、レイアウトは再レンダリングされないことです。
 - **ルートレイアウト** は、ルート `app` ディレクトリ内の最上位のレイアウトです。`<html>` タグや `<body>` タグ、その他のグローバルに共有される UI を定義するために使用されます。
 - クライアントサイドナビゲーションとは：「ページ遷移をクライアント側のjavascript処理で実行し、サーバには通信を行わない」(ブラウザのみで処理が完結する。)
+- vercelとは：https://zenn.dev/haruki1009/books/42c167218b5fec/viewer/0a9089
+- npm installでのCould not resolve dependencyエラーと--legacy-peer-depsについて：https://zenn.dev/minamiso/articles/78b22716f3338d
 
-次はここから：https://ja.nextjs.im/learn/dashboard-app/setting-up-your-database
+- @vercel/edge-configインストールのためにやったこと
+
+```
+npm ls typedoc 
+npm ls minimatch
+
+npm cache clean --force 
+rm -rf node_modules package-lock.json 
+npm install npm install @vercel/edge-config
+```
+
+次はここから(データベースへのデータ投入)：https://ja.nextjs.im/learn/dashboard-app/setting-up-your-database#seed-your-database
