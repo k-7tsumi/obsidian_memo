@@ -103,5 +103,6 @@ npm cache clean --force
 rm -rf node_modules package-lock.json 
 npm install npm install @vercel/edge-config
 ```
+- useEffectについて確認する。(何するのか良く分かっていない。)
 
-次はここから(データベースへのデータ投入)：https://ja.nextjs.im/learn/dashboard-app/setting-up-your-database#seed-your-database
+次はここから(ダッシュボード概要ページのデータ取得)：https://ja.nextjs.im/learn/dashboard-app/fetching-data#fetching-data-for-the-dashboard-overview-page
