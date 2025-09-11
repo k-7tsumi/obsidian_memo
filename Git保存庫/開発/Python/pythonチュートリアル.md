@@ -21,4 +21,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 - Pythonのpass文とは：https://note.nkmk.me/python-pass-usage/
 - Pythonのスタイルガイド：https://peps.python.org/pep-0008/
 
-次はここから(4.9.1. デフォルトの引数値)：https://docs.python.org/ja/3.13/tutorial/controlflow.html
+次はここから(### 5.1.4. ネストしたリストの内包表記)：https://docs.python.org/ja/3.13/tutorial/datastructures.html

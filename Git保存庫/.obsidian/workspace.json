@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "開発/React_Nextjs/Next.js チュートリアル.md",
+                "file": "デイリーノート/2025-09-11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Next.js チュートリアル"
+              "title": "2025-09-11"
             }
           }
         ]
@@ -186,22 +186,23 @@
   "active": "3139bd6d846f92a7",
   "lastOpenFiles": [
     "デイリーノート/2025-09-10.md",
+    "開発/Python/pythonチュートリアル.md",
+    "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
     "デイリーノート/2025-09-11.md",
-    "TODO/テンプレート/勉強する日TODO.md",
+    "開発/AI勉強/Dify/ナレッジベース(RAG)の検索設定まとめ.md",
     "小説/小説案①/メモ.md",
+    "開発/野菜在庫管理システム/メモ.md",
+    "TODO/テンプレート/勉強する日TODO.md",
+    "開発/AI勉強/Dify/RAGアプリ作り.md",
+    "開発/React_Nextjs/Next.js チュートリアル.md",
     "レシピレコメンド用データ/レシピレコメンド用データ.md",
     "デイリーノート/2025-09-09.md",
-    "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
     "開発/インフラ/Azure/Azure Kubernetes Service (AKS).md",
     "開発/インフラ/Azure/Azureで何する？メモ.md",
     "開発/インフラ/Azure/無題のフォルダ",
-    "開発/Python/pythonチュートリアル.md",
-    "開発/AI勉強/Dify/ナレッジベース(RAG)の検索設定まとめ.md",
-    "開発/AI勉強/Dify/RAGアプリ作り.md",
     "開発/AI勉強/Dify/Dify触るTODO.md",
     "開発/AI勉強/Dify/Difyのドキュメント読む.md",
     "開発/AI勉強/LlamIndexを触ってみる.md",
-    "開発/React_Nextjs/Next.js チュートリアル.md",
     "デイリーノート/2025-09-04.md",
     "デイリーノート/2025-09-05.md",
     "デイリーノート/2025-09-06.md",
@@ -210,7 +211,6 @@
     "無題のファイル.base",
     "転職活動/就活計画表.md",
     "転職活動/1次面接対策.md",
-    "開発/野菜在庫管理システム/メモ.md",
     "TODO/テンプレート/無題のファイル 1.md",
     "TODO/テンプレート",
     "TODO",
