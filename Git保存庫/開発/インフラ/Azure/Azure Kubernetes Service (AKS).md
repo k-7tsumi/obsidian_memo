@@ -10,5 +10,8 @@
 - https://learn.microsoft.com/ja-jp/training/paths/intro-to-kubernetes-on-azure/
 
 - デーモンとは：https://qiita.com/yuta_931214/items/19ffad86cdfdd5bf37dc
+- コンテナー OS は、ホスト OS から分離されている、アプリケーションをデプロイして実行する環境です。
+- scratchとは、超最小化されたベースイメージのよう。
+- aptとは：https://weblabo.oscasierra.net/ubuntu-apt/
 
-- 次はここから：https://learn.microsoft.com/ja-jp/training/modules/intro-to-docker-containers/3-how-docker-images-work
+- 次はここから(コンテナーを一時停止する方法)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-docker-containers/4-how-docker-containers-work
