@@ -104,5 +104,6 @@ rm -rf node_modules package-lock.json
 npm install npm install @vercel/edge-config
 ```
 - useEffectについて確認する。(何するのか良く分かっていない。)
+- TypeScriptの分割代入引数(デストラクチャリング) : https://typescriptbook.jp/reference/functions/destructuring-assignment-parameters
 
-次はここから(ダッシュボード概要ページのデータ取得)：https://ja.nextjs.im/learn/dashboard-app/fetching-data#fetching-data-for-the-dashboard-overview-page
+次はここから(練習：`<Card>`コンポーネントのデータ取得)：https://ja.nextjs.im/learn/dashboard-app/fetching-data#practice-fetch-data-for-the-card-components
