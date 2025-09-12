@@ -29,3 +29,8 @@ $uv run python -c "from src.tools.search_xyz_manual import search_xyz_manual; re
 - Pythonのimport：https://note.nkmk.me/python-import-usage/
 - Pythonの型ヒント：https://qiita.com/shun_sakamoto/items/65edc36e7f5a6f9d52b8
 - Microsoftの研究者らが提案した質問レベルの分類：https://arxiv.org/abs/2409.14924v1
+- e2bサンドボックス: [https://zenn.dev/shibatanaoto/scraps/5fccd3933614c4](https://zenn.dev/shibatanaoto/scraps/5fccd3933614c4)
+	- 公式： https://e2b.dev/
+- julius AI: [https://note.com/ai_hoppingrabbit/n/na38e3d175029](https://note.com/ai_hoppingrabbit/n/na38e3d175029)
+- venv: Python 仮想環境管理：https://qiita.com/fiftystorm36/items/b2fd47cf32c7694adc2e
+	- venvはPythonに標準で組み込まれているモジュール
