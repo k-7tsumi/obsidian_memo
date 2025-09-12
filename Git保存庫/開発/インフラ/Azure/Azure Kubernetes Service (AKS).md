@@ -13,5 +13,9 @@
 - コンテナー OS は、ホスト OS から分離されている、アプリケーションをデプロイして実行する環境です。
 - scratchとは、超最小化されたベースイメージのよう。
 - aptとは：https://weblabo.oscasierra.net/ubuntu-apt/
+- コンテナーでは、データを永続化するために 2 つのオプションを使用できます。 1 つ目のオプションは "_ボリューム_" を使用するもので、2 つ目のオプションは "_バインド マウント_" です。
+- Dockerのボリュームとは：https://qiita.com/gounx2/items/23b0dc8b8b95cc629f32
+- コンテナのポートを公開するには、docker run コマンドで `--publish` フラグ（短縮形は `-p` ） を使います。 `--publish` 命令は `[host port]:[container port]` 形式です。そのため、コンテナ外のポート 3000 に コンテナ内のポート 8000 を公開するには、 --publish フラグに 3000:8000 を渡します。
+	- https://docs.docker.jp/language/nodejs/run-containers.html
 
-- 次はここから(コンテナーを一時停止する方法)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-docker-containers/4-how-docker-containers-work
+- 次はここから(ハードウェアの効率的な使用)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-docker-containers/5-when-use-docker-containers
