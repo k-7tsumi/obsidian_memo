@@ -21,4 +21,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 - Pythonのpass文とは：https://note.nkmk.me/python-pass-usage/
 - Pythonのスタイルガイド：https://peps.python.org/pep-0008/
 
-次はここから(### 5.1.4. ネストしたリストの内包表記)：https://docs.python.org/ja/3.13/tutorial/datastructures.html
+次はここから(二つまたはそれ以上のシーケンス型を同時にループするために、関数 [`zip()`](https://docs.python.org/ja/3.13/library/functions.html#zip "zip") を使って各要素をひと組みにすることができます。 )：https://docs.python.org/ja/3.13/tutorial/datastructures.html
