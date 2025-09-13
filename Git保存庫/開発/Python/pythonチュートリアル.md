@@ -20,5 +20,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 - `for` または `while` ループ中の `break` 文は `else` 節と対になる場合があります。`break` を実行せずにループが終了すると、`else` 節が実行されます。
 - Pythonのpass文とは：https://note.nkmk.me/python-pass-usage/
 - Pythonのスタイルガイド：https://peps.python.org/pep-0008/
+- Python の __name__ == '__main__' とは何か知りたい：https://qiita.com/taro-hida/items/c8ca8ba1912243a68369
+- 一般的には、モジュールやパッケージから `*` を import するというやり方には賛同できません。
 
-次はここから(二つまたはそれ以上のシーケンス型を同時にループするために、関数 [`zip()`](https://docs.python.org/ja/3.13/library/functions.html#zip "zip") を使って各要素をひと組みにすることができます。 )：https://docs.python.org/ja/3.13/tutorial/datastructures.html
+次はここから(6.1.1. モジュールをスクリプトとして実行する )：https://docs.python.org/ja/3.13/tutorial/modules.html#more-on-modules
