@@ -105,5 +105,7 @@ npm install npm install @vercel/edge-config
 ```
 - useEffectについて確認する。(何するのか良く分かっていない。)
 - TypeScriptの分割代入引数(デストラクチャリング) : https://typescriptbook.jp/reference/functions/destructuring-assignment-parameters
+- Promiseとは：https://qiita.com/cheez921/items/41b744e4e002b966391a
+- Promise.all()：https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
 
-次はここから(練習：`<Card>`コンポーネントのデータ取得)：https://ja.nextjs.im/learn/dashboard-app/fetching-data#practice-fetch-data-for-the-card-components
+次はここから：https://ja.nextjs.im/learn/dashboard-app/static-and-dynamic-rendering
