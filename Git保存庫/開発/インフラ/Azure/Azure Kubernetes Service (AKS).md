@@ -17,5 +17,6 @@
 - Dockerのボリュームとは：https://qiita.com/gounx2/items/23b0dc8b8b95cc629f32
 - コンテナのポートを公開するには、docker run コマンドで `--publish` フラグ（短縮形は `-p` ） を使います。 `--publish` 命令は `[host port]:[container port]` 形式です。そのため、コンテナ外のポート 3000 に コンテナ内のポート 8000 を公開するには、 --publish フラグに 3000:8000 を渡します。
 	- https://docs.docker.jp/language/nodejs/run-containers.html
+- コンテナをデプロイできるazureのサービス：Azure Container Instances、Azure App Service、Azure Kubernetes Service
 
-- 次はここから(ハードウェアの効率的な使用)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-docker-containers/5-when-use-docker-containers
+- 次はここから：https://learn.microsoft.com/ja-jp/training/modules/intro-to-containers/4-create-custom-docker-image
