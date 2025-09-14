@@ -37,3 +37,6 @@
 	  - 使用するデータ量の少なさからtext-embedding-3-small (OpenAI)にしてみる。
 - インデックスを「高品質」に変えて、ベクトル検索にしたら検索できるようになった。
 	- 検索の種類を用途によって選べるようにならないと。
+- ナレッジのAPIあるやん。：https://zenn.dev/solvio/articles/547db2c2acc28d
+	- 公式ドキュメント：https://docs.dify.ai/ja-jp/guides/knowledge-base/knowledge-and-documents-maintenance/maintain-dataset-via-api
+- 1日1回アップロードするバッチ作ろう。もしくは更新のタイミングでキックされてアップロードするやつ。
