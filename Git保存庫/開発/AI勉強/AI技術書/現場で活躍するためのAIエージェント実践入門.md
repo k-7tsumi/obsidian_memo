@@ -37,3 +37,7 @@ $uv run python -c "from src.tools.search_xyz_manual import search_xyz_manual; re
 - venv: Python 仮想環境管理：https://qiita.com/fiftystorm36/items/b2fd47cf32c7694adc2e
 	- venvはPythonに標準で組み込まれているモジュール
 - Jinja2とは：https://flask-web-academy.com/article/flask-jinja2/
+- Pydanticとは：https://qiita.com/Tadataka_Takahashi/items/8b28f49d67d7e1d65d11
+- Python assertとは：https://note.nkmk.me/python-assert-usage/
+- ChatBotArena( 機能、価格、機能を比較し、ニーズに最適なチャットボット ビルダーを比較・検討できるサービス )：https://chatbotarena.com/
+- 
