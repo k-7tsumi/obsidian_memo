@@ -22,5 +22,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 - Pythonのスタイルガイド：https://peps.python.org/pep-0008/
 - Python の __name__ == '__main__' とは何か知りたい：https://qiita.com/taro-hida/items/c8ca8ba1912243a68369
 - 一般的には、モジュールやパッケージから `*` を import するというやり方には賛同できません。
+- Python の __init__.py とは何なのか：https://qiita.com/msi/items/d91ea3900373ff8b09d7
+	- よく理解できた。
 
-次はここから(6.1.1. モジュールをスクリプトとして実行する )：https://docs.python.org/ja/3.13/tutorial/modules.html#more-on-modules
+次はここから(7.1. 出力を見やすくフォーマットする )：https://docs.python.org/ja/3.13/tutorial/inputoutput.html
