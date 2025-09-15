@@ -19,6 +19,11 @@
 複数の候補がある場合は、最大3つまで提案してください。
 ```
 
+### データ更新方法
+- Slackのなにかしらの方法で、料理名・使用する材料・レシピ本名の3つを登録し、DifyのナレッジAPIで登録する。
+- Slack → Googleスプレッドシート → Dify の流れで良さそう。
+- バッチではなく、登録時随時で良さそう。(GASでシートに入力あったらキックで良さそう。)
+
 ## メモ
 エージェントも簡単に作れるんかい。
 ![[スクリーンショット 2025-09-06 0.26.26.png]]
@@ -40,3 +45,5 @@
 - ナレッジのAPIあるやん。：https://zenn.dev/solvio/articles/547db2c2acc28d
 	- 公式ドキュメント：https://docs.dify.ai/ja-jp/guides/knowledge-base/knowledge-and-documents-maintenance/maintain-dataset-via-api
 - 1日1回アップロードするバッチ作ろう。もしくは更新のタイミングでキックされてアップロードするやつ。
+- アプリ内でのナレッジベース統合：https://docs.dify.ai/ja-jp/guides/knowledge-base/integrate-knowledge-within-application
+- 【非エンジニア向け】Difyナレッジ⇔ Googleスプレッドシートの自動連携：https://note.com/sasuu/n/n4f8d39694fb0
