@@ -40,4 +40,8 @@ $uv run python -c "from src.tools.search_xyz_manual import search_xyz_manual; re
 - Pydanticとは：https://qiita.com/Tadataka_Takahashi/items/8b28f49d67d7e1d65d11
 - Python assertとは：https://note.nkmk.me/python-assert-usage/
 - ChatBotArena( 機能、価格、機能を比較し、ニーズに最適なチャットボット ビルダーを比較・検討できるサービス )：https://chatbotarena.com/
-- 
+- EvalPlus(厳格なテストでAI Coderの評価を記載している。)：https://evalplus.github.io/leaderboard.html
+- perplexity：https://www.perplexity.ai/
+	- 概要：https://www.perplexity.ai/ja/hub/getting-started
+- deep research：https://openai.com/ja-JP/index/introducing-deep-research/
+- LangGraph：https://zenn.dev/pharmax/articles/8796b892eed183
