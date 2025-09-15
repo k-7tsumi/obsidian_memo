@@ -21,5 +21,27 @@
   - https://docs.docker.jp/language/nodejs/run-containers.html
 - コンテナをデプロイできる azure のサービス：Azure Container Instances、Azure App Service、Azure Kubernetes Service
 - Linuxとか、Ubuntuとか、その辺りの用語に対する全般的な勉強をしたい。。
+- Azure Container Registry：https://learn.microsoft.com/ja-jp/azure/container-registry/container-registry-intro
+	- 作成する Azure コンテナー レジストリ リソースはそれぞれ、一意の URL を持つ個別のレジストリです。
+- AzureCLIのインストール：https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli-macos?view=azure-cli-latest
+- コンテナまだ作れていない。
 
-- 次はここから(Web アプリをテストする)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-containers/5-exercise-create-custom-docker-image
+```
+$az acr create --name k7tsumihotelreservationsystem --resource-group katakura_resource_group --sku standard --admin-enabled true
+
+(MissingSubscriptionRegistration) The subscription is not registered to use namespace 'Microsoft.ContainerRegistry'. See https://aka.ms/rps-not-found for how to register subscriptions.
+
+Code: MissingSubscriptionRegistration
+
+Message: The subscription is not registered to use namespace 'Microsoft.ContainerRegistry'. See https://aka.ms/rps-not-found for how to register subscriptions.
+
+Exception Details: (MissingSubscriptionRegistration) The subscription is not registered to use namespace 'Microsoft.ContainerRegistry'. See https://aka.ms/rps-not-found for how to register subscriptions.
+
+Code: MissingSubscriptionRegistration
+
+Message: The subscription is not registered to use namespace 'Microsoft.ContainerRegistry'. See https://aka.ms/rps-not-found for how to register subscriptions.
+
+Target: Microsoft.ContainerRegistry
+```
+
+- 次はここから：https://learn.microsoft.com/ja-jp/training/modules/intro-to-containers/6-deploy-docker-image-to-container-instance
