@@ -107,5 +107,12 @@ npm install npm install @vercel/edge-config
 - TypeScriptの分割代入引数(デストラクチャリング) : https://typescriptbook.jp/reference/functions/destructuring-assignment-parameters
 - Promiseとは：https://qiita.com/cheez921/items/41b744e4e002b966391a
 - Promise.all()：https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+- ストリーミングは、ルートを小さな「チャンク」に分割し、準備が整った順にサーバーからクライアントに段階的にストリーミングするデータ転送技術です。
+- Next.jsでストリーミングを実装する方法は2つあります：
+1. ページレベルで、`loading.tsx`ファイルを使用（内部で`<Suspense>`を作成）
+2. コンポーネントレベルで、`<Suspense>`を使用してより細かい制御
+- Next.jsでのローディングUIの表示：https://qiita.com/happy663/items/469c5306e538e4c87049#%E3%83%AD%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AEui%E8%A1%A8%E7%A4%BA
+- 括弧`()`を使用して新しいフォルダを作成すると、その名前はURLパスに含まれません。したがって、`/dashboard/(overview)/page.tsx`は`/dashboard`になります。
+- React Suspense：https://ja.react.dev/reference/react/Suspense
 
 次はここから：https://ja.nextjs.im/learn/dashboard-app/static-and-dynamic-rendering
