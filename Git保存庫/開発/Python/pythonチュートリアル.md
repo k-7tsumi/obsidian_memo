@@ -27,4 +27,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 - Python 書式指定一覧：https://qiita.com/puchi2121/items/c96219a731106c44316e
 - Pythonのwith文の正体：https://zenn.dev/k41531/articles/9c566a778b79ca
 
-次はここから(7.2.2. [`json`](https://docs.python.org/ja/3.13/library/json.html#module-json "json: Encode and decode the JSON format.") による構造化されたデータの保存 )：https://docs.python.org/ja/3.13/tutorial/inputoutput.html
+次はここから(8.10. ノートによって例外を充実させる )：https://docs.python.org/ja/3.13/tutorial/errors.html
