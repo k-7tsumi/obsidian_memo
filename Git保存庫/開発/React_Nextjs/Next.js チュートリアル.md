@@ -115,4 +115,4 @@ npm install npm install @vercel/edge-config
 - 括弧`()`を使用して新しいフォルダを作成すると、その名前はURLパスに含まれません。したがって、`/dashboard/(overview)/page.tsx`は`/dashboard`になります。
 - React Suspense：https://ja.react.dev/reference/react/Suspense
 
-次はここから：https://ja.nextjs.im/learn/dashboard-app/static-and-dynamic-rendering
+次はここから( [部分プリレンダリング (Partial Prerendering) とは？](https://ja.nextjs.im/learn/dashboard-app/partial-prerendering#what-is-partial-prerendering) )：https://ja.nextjs.im/learn/dashboard-app/partial-prerendering
