@@ -47,3 +47,6 @@
 - 1日1回アップロードするバッチ作ろう。もしくは更新のタイミングでキックされてアップロードするやつ。
 - アプリ内でのナレッジベース統合：https://docs.dify.ai/ja-jp/guides/knowledge-base/integrate-knowledge-within-application
 - 【非エンジニア向け】Difyナレッジ⇔ Googleスプレッドシートの自動連携：https://note.com/sasuu/n/n4f8d39694fb0
+- Googleスプレッドシート → Dify の部分を進める。
+- データを追加していくGoogleスプレッドシート：https://docs.google.com/spreadsheets/d/1JN-2aSbO8i8cO69gmA60dtyq44iX1i45eUMC7_oKyFE/edit?hl=ja&gid=0#gid=0
+- GASのトリガー：https://developers.google.com/apps-script/guides/triggers?hl=ja
