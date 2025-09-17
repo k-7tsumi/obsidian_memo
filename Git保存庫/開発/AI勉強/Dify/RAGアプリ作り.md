@@ -23,6 +23,7 @@
 - Slackのなにかしらの方法で、料理名・使用する材料・レシピ本名の3つを登録し、DifyのナレッジAPIで登録する。
 - Slack → Googleスプレッドシート → Dify の流れで良さそう。
 - バッチではなく、登録時随時で良さそう。(GASでシートに入力あったらキックで良さそう。)
+	- onEdit()不具合多そうなので、3時間に1回くらいのバッチにする。
 
 ## メモ
 エージェントも簡単に作れるんかい。
@@ -50,3 +51,7 @@
 - Googleスプレッドシート → Dify の部分を進める。
 - データを追加していくGoogleスプレッドシート：https://docs.google.com/spreadsheets/d/1JN-2aSbO8i8cO69gmA60dtyq44iX1i45eUMC7_oKyFE/edit?hl=ja&gid=0#gid=0
 - GASのトリガー：https://developers.google.com/apps-script/guides/triggers?hl=ja
+- Difyのセルフホストサービス：https://dev.classmethod.jp/articles/dify-self-hosting-aws/
+- ボタン一発で！ーAzure × Dify でノーコード AI エージェント開発環境をクラウドに構築：https://note.com/sasaki_akio/n/n6af6b1a97341
+- Difyで作ったLLM ApplicationをAzure Kubernetes Serviceにデプロイする方法：https://zenn.dev/microsoft/articles/dify_on_azure
+	- ↑これやってみよう。
