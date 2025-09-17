@@ -26,5 +26,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 	- よく理解できた。
 - Python 書式指定一覧：https://qiita.com/puchi2121/items/c96219a731106c44316e
 - Pythonのwith文の正体：https://zenn.dev/k41531/articles/9c566a778b79ca
+- object.__init__(_self_[, _..._])：https://docs.python.org/ja/3.13/reference/datamodel.html#object.__init__
 
-次はここから(8.10. ノートによって例外を充実させる )：https://docs.python.org/ja/3.13/tutorial/errors.html
+次はここから(9.4. いろいろな注意点 )：https://docs.python.org/ja/3.13/tutorial/classes.html
