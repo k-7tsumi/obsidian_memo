@@ -114,5 +114,10 @@ npm install npm install @vercel/edge-config
 - Next.jsでのローディングUIの表示：https://qiita.com/happy663/items/469c5306e538e4c87049#%E3%83%AD%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AEui%E8%A1%A8%E7%A4%BA
 - 括弧`()`を使用して新しいフォルダを作成すると、その名前はURLパスに含まれません。したがって、`/dashboard/(overview)/page.tsx`は`/dashboard`になります。
 - React Suspense：https://ja.react.dev/reference/react/Suspense
+- ルートの動的部分を Suspense でラップしている限り、Next.js はルートのどの部分が静的でどの部分が動的かを認識します。
+- URLパラメータはサーバー上で直接使用できるため、初期状態のレンダリングが容易になります。
+- useSearchParams：https://nextjs.org/docs/app/api-reference/functions/use-search-params
+- useRouter：https://nextjs.org/docs/pages/api-reference/functions/use-router
+- URLSearchParams： https://developer.mozilla.org/ja/docs/Web/API/URLSearchParams
 
-次はここから( [部分プリレンダリング (Partial Prerendering) とは？](https://ja.nextjs.im/learn/dashboard-app/partial-prerendering#what-is-partial-prerendering) )：https://ja.nextjs.im/learn/dashboard-app/partial-prerendering
+次はここから( [2. 検索パラメータでURLを更新する](https://ja.nextjs.im/learn/dashboard-app/adding-search-and-pagination#2-update-the-url-with-the-search-params))：https://ja.nextjs.im/learn/dashboard-app/adding-search-and-pagination
