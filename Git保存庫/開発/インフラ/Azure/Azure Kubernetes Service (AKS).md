@@ -140,5 +140,19 @@ $az acr create --name k7tsumihotelreservationsystem --resource-group katakura_re
 
 - SKU = 複数のサービス階層
 	- https://learn.microsoft.com/ja-jp/azure/container-registry/container-registry-skus
+- docker login：https://docs.docker.jp/engine/reference/commandline/login.html
+- タグ指定できてる。
 
-- 次はここから(SKU が異なると、スケーラビリティとストレージ レベルが異なります。)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-containers/6-deploy-docker-image-to-container-instance
+```
+$docker tag reservationsystem k7tsumihotelreservationsystem.azurecr.io/reservationsystem:v2
+
+$docker images
+
+REPOSITORY                                                   TAG           IMAGE ID       CREATED         SIZE
+
+reservationsystem                                            latest        6d2eddc43195   2 days ago      1.87GB
+
+k7tsumihotelreservationsystem.azurecr.io/reservationsystem   v2            6d2eddc43195   2 days ago      1.87GB
+```
+
+-  次はここから(次のコマンドを使用して、レジストリ内のリポジトリをリストし、イメージが正しくアップロードされていることを確認します。)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-containers/6-deploy-docker-image-to-container-instance
