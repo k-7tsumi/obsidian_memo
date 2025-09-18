@@ -27,5 +27,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 - Python 書式指定一覧：https://qiita.com/puchi2121/items/c96219a731106c44316e
 - Pythonのwith文の正体：https://zenn.dev/k41531/articles/9c566a778b79ca
 - object.__init__(_self_[, _..._])：https://docs.python.org/ja/3.13/reference/datamodel.html#object.__init__
+- ほとんどの Python コードが従っている慣習があります。アンダースコアで始まる名前 (例えば `_spam`) は、 (関数であれメソッドであれデータメンバであれ) 非 public なAPIとして扱います。これらは、予告なく変更されるかもしれない実装の詳細として扱われるべきです。
+- `dataclasses`：https://docs.python.org/ja/3.13/library/dataclasses.html#module-dataclasses
 
-次はここから(9.4. いろいろな注意点 )：https://docs.python.org/ja/3.13/tutorial/classes.html
+次はここから(9.9. ジェネレータ (generator) )：https://docs.python.org/ja/3.13/tutorial/classes.html
