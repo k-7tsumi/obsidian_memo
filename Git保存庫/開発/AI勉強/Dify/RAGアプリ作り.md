@@ -58,3 +58,7 @@
 - ボタン一発で！ーAzure × Dify でノーコード AI エージェント開発環境をクラウドに構築：https://note.com/sasaki_akio/n/n6af6b1a97341
 - Difyで作ったLLM ApplicationをAzure Kubernetes Serviceにデプロイする方法：https://zenn.dev/microsoft/articles/dify_on_azure
 	- ↑これやってみよう。
+- Kubernetes における Helm とは？：https://sysdig.jp/learn-cloud-native/what-is-helm-in-kubernetes/
+- kubectlとは：https://kubernetes.io/ja/docs/reference/kubectl/
+
+次はここから(まずは、以下のコマンドでクラスターを作成します。)：https://zenn.dev/microsoft/articles/dify_on_azure#azure-kubernetes-service-%E3%81%B8-deploy
