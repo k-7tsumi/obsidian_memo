@@ -120,4 +120,4 @@ npm install npm install @vercel/edge-config
 - useRouter：https://nextjs.org/docs/pages/api-reference/functions/use-router
 - URLSearchParams： https://developer.mozilla.org/ja/docs/Web/API/URLSearchParams
 
-次はここから( [2. 検索パラメータでURLを更新する](https://ja.nextjs.im/learn/dashboard-app/adding-search-and-pagination#2-update-the-url-with-the-search-params))：https://ja.nextjs.im/learn/dashboard-app/adding-search-and-pagination
+次はここから(検索とページネーションの追加)：https://ja.nextjs.im/learn/dashboard-app/adding-search-and-pagination#adding-pagination
