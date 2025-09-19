@@ -29,5 +29,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 - object.__init__(_self_[, _..._])：https://docs.python.org/ja/3.13/reference/datamodel.html#object.__init__
 - ほとんどの Python コードが従っている慣習があります。アンダースコアで始まる名前 (例えば `_spam`) は、 (関数であれメソッドであれデータメンバであれ) 非 public なAPIとして扱います。これらは、予告なく変更されるかもしれない実装の詳細として扱われるべきです。
 - `dataclasses`：https://docs.python.org/ja/3.13/library/dataclasses.html#module-dataclasses
+- osモジュール：https://docs.python.org/ja/3.13/library/os.html#module-os
+- `shutil` --- 高水準のファイル操作：https://docs.python.org/ja/3.13/library/shutil.html#module-shutil
+- 現代のPython開発では、仮想環境の使用はほぼ必須とされています。「プロジェクトを始めたらまず仮想環境を作る」が基本的な流れになっています。← そうなんだ。
 
-次はここから(9.9. ジェネレータ (generator) )：https://docs.python.org/ja/3.13/tutorial/classes.html
+ひと通りPythonのドキュメントは読んだので、LangChainのAIエージェントを作りつつ、実践でPythonを書いていこう。
