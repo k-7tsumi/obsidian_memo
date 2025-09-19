@@ -33,4 +33,4 @@ response = model.invoke(messages)
 # レスポンスを表示
 print(response)
 ```
-
+- $uv run python main.pyのような感じで実行すると、uv経由で仮想環境で実行できる。
