@@ -60,5 +60,18 @@
 	- ↑これやってみよう。
 - Kubernetes における Helm とは？：https://sysdig.jp/learn-cloud-native/what-is-helm-in-kubernetes/
 - kubectlとは：https://kubernetes.io/ja/docs/reference/kubectl/
+- az aks コマンド：https://learn.microsoft.com/ja-jp/cli/azure/aks?view=azure-cli-latest
+- Azure Kubernetes Service (AKS) クラスター管理の Free、Standard、Premium 価格レベル：https://learn.microsoft.com/ja-jp/azure/aks/free-standard-pricing-tiers
+- Ingress機能とは：https://kubernetes.io/ja/docs/concepts/services-networking/ingress/
 
 次はここから(まずは、以下のコマンドでクラスターを作成します。)：https://zenn.dev/microsoft/articles/dify_on_azure#azure-kubernetes-service-%E3%81%B8-deploy
+
+- 先に以下解決する。
+
+```
+$az aks create --resource-group katakura_resource_group2 --name aks-poc-dify-app --tier free --node-count 1 --node-vm-size Standard_B2s --priority Spot --evction-policy Delete --spot-max-price -1 --enable-addons http_application_routing --generate-ssh-keys 
+
+unrecognized arguments: --priority Spot --eviction-policy Delete --spot-max-price -1 Examples from AI knowledge base: az aks create --resource-group MyResourceGroup --name MyManagedCluster Create a kubernetes cluster with default kubernetes version, default SKU load balancer (Standard) and default vm set type (VirtualMachineScaleSets). az aks create --resource-group MyResourceGroup --name MyManagedCluster --enable-managed-identity Create a kubernetes cluster which enables managed identity. az extension add --name anextension Add extension by name 
+
+[https://docs.microsoft.com/en-US/cli/azure/aks#az_aks_create](https://docs.microsoft.com/en-US/cli/azure/aks#az_aks_create) Read more about the command in reference docs
+```
