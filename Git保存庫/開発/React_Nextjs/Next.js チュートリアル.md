@@ -119,5 +119,7 @@ npm install npm install @vercel/edge-config
 - useSearchParams：https://nextjs.org/docs/app/api-reference/functions/use-search-params
 - useRouter：https://nextjs.org/docs/pages/api-reference/functions/use-router
 - URLSearchParams： https://developer.mozilla.org/ja/docs/Web/API/URLSearchParams
+- Reactサーバーアクションを使用すると、サーバー上で直接非同期コードを実行できます。
+- Progressive Enhancement (プログレッシブエンハンスメント)：https://developer.mozilla.org/ja/docs/Glossary/Progressive_Enhancement
 
-次はここから(検索とページネーションの追加)：https://ja.nextjs.im/learn/dashboard-app/adding-search-and-pagination#adding-pagination
+次はここから([2. サーバーアクションの作成](https://ja.nextjs.im/learn/dashboard-app/mutating-data#2-create-a-server-action))：https://ja.nextjs.im/learn/dashboard-app/mutating-data
