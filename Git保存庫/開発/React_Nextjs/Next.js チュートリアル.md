@@ -121,5 +121,9 @@ npm install npm install @vercel/edge-config
 - URLSearchParams： https://developer.mozilla.org/ja/docs/Web/API/URLSearchParams
 - Reactサーバーアクションを使用すると、サーバー上で直接非同期コードを実行できます。
 - Progressive Enhancement (プログレッシブエンハンスメント)：https://developer.mozilla.org/ja/docs/Glossary/Progressive_Enhancement
+- アクション内に`"use server"`を追加することで、サーバーコンポーネント内に直接サーバーアクションを記述することもできます。ただし、このコースでは、すべてを別のファイルに整理しておきます。アクション用に別のファイルを作成することをお勧めします。 → だからlibフォルダに置いている。
+- TypeScriptファーストの検証ライブラリZod：https://zod.dev/
+- TypeScript ファーストの型検証ライブラリ「Zod」とは？：https://qiita.com/naoyuki2/items/b64dadd21d86facb5375
+- revalidatePath関数：https://nextjs.org/docs/app/api-reference/functions/revalidatePath
 
-次はここから([2. サーバーアクションの作成](https://ja.nextjs.im/learn/dashboard-app/mutating-data#2-create-a-server-action))：https://ja.nextjs.im/learn/dashboard-app/mutating-data
+次はここから( [6. 再検証とリダイレクト](https://ja.nextjs.im/learn/dashboard-app/mutating-data#6-revalidate-and-redirect) )：https://ja.nextjs.im/learn/dashboard-app/mutating-data
