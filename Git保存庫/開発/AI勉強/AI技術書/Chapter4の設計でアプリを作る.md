@@ -34,3 +34,9 @@ response = model.invoke(messages)
 print(response)
 ```
 - $uv run python main.pyのような感じで実行すると、uv経由で仮想環境で実行できる。
+- langchain_tavilyとは：https://python.langchain.com/docs/integrations/tools/tavily_search/
+	- Tavily は、主に大規模言語モデル（LLM）や AI エージェント向けに設計された**リアルタイム Web 検索エンジン**です。
+	- 【保存版】Tavily Search API 導入で変わる AI アプリケーション開発：https://qiita.com/syukan3/items/3011fd487fa2a4343b4a
+- [LangGraph] CheckpointとStoreの使い方：https://zenn.dev/pharmax/articles/26be245e159590
+
+次はここから：https://python.langchain.com/docs/tutorials/agents/　のサンプルコードで動いたけど、仕組みがよく分からないので、↑の記事含めて読んでから発展編作る。
