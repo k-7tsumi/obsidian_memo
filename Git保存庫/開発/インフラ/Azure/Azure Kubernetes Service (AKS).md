@@ -293,5 +293,4 @@ $az container show --resource-group katakura_resource_group --name reservationsy
 - 1日で146円くらいかかっていて、高いので、安いリージョンと容量でできないか確認する。
 - Azure Resource Mover: https://learn.microsoft.com/ja-jp/azure/resource-mover/overview
 
--  次はここから(インスタンスは、指定した DNS ラベルに基づくドメイン名で Azure によってホストされます。 インスタンスの完全修飾ドメイン名を見つけるには、インスタンスの IP アドレスに対してクエリを実行します。)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-containers/6-deploy-docker-image-to-container-instance
-	- ※ コンテナのURLアクセスの仕方がよく分からない。
+-  次はこれをやる：https://learn.microsoft.com/ja-jp/training/modules/intro-to-kubernetes/
