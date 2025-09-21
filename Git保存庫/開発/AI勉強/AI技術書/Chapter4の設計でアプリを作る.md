@@ -38,5 +38,12 @@ print(response)
 	- Tavily は、主に大規模言語モデル（LLM）や AI エージェント向けに設計された**リアルタイム Web 検索エンジン**です。
 	- 【保存版】Tavily Search API 導入で変わる AI アプリケーション開発：https://qiita.com/syukan3/items/3011fd487fa2a4343b4a
 - [LangGraph] CheckpointとStoreの使い方：https://zenn.dev/pharmax/articles/26be245e159590
+- LangGraphは、ステートマシンを作成し、複数のエージェントが協調して動作する「マルチエージェント」の構築を容易にすることを目的に開発されています。
+	- https://zenn.dev/pharmax/articles/8796b892eed183
+- 状態を保存・復元するだけではなく、Checkpointerを設定している会話(スレッド)中はその内容は各LLM実行に引き継がれています。同じスレッド内では前のLLM実行の内容を記憶した状態で、次のLLMの実行を行うことが可能です。
+- ReAct（Reasoning and Acting）パターンとは。。
+	- ReActは「Reasoning and Acting」の略で、大言語モデル（LLM）が思考（Thought）→行動（Action）→観察（Observation）のサイクルを繰り返すことで、複雑なタスクを段階的に解決するパターンです。
+	- https://qiita.com/yukiaprogramming/items/6599fdcf284e5481ecc4
+- LangGraphのcreate_react_agentの公式ドキュメント：https://python.langchain.com/api_reference/langchain/agents/langchain.agents.react.agent.create_react_agent.html
 
-次はここから：https://python.langchain.com/docs/tutorials/agents/　のサンプルコードで動いたけど、仕組みがよく分からないので、↑の記事含めて読んでから発展編作る。
+次はここから：技術書読みながら、AIエージェントの作り方を学ぶ。
