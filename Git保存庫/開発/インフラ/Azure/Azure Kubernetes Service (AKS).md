@@ -292,5 +292,11 @@ $az container show --resource-group katakura_resource_group --name reservationsy
 
 - 1日で146円くらいかかっていて、高いので、安いリージョンと容量でできないか確認する。
 - Azure Resource Mover: https://learn.microsoft.com/ja-jp/azure/resource-mover/overview
+- ロールアウトとは：
+    - 新しい機能やアップデートを徐々に公開する
+    - 目的はリスクを抑えつつ新機能を展開すること
+    - 段階的なリリース
+- Kubernetes クラスターの API サーバーに対してコマンドを実行できる `kubectl` というコマンドライン アプリを使用します。 この API を提供するコンポーネントは `kube-apiserver` と呼ばれます。
 
--  次はこれをやる：https://learn.microsoft.com/ja-jp/training/modules/intro-to-kubernetes/
+
+-  次はここから(ノードで実行されるサービス)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-kubernetes/3-how-kubernetes-works

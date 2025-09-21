@@ -172,5 +172,12 @@ $az acr create --resource-group katakura_resource_group2 --name difyapp --sku Bs
 }
 ```
 
-次はここから(以下のCR作成の続きやる。):
+- Difyのリリースノート：https://github.com/langgenius/dify/releases
+- Docker hubにDifyのイメージが置いてある。
+	- https://hub.docker.com/r/langgenius/dify-web
+	- https://hub.docker.com/r/langgenius/dify-api
+- 何のページ。。？：https://douban.github.io/charts/
+	- https://github.com/douban/charts
+
+次はここから(イングレス設定のvalues.yamlを確認する):
 - Difyで作ったLLM ApplicationをAzure Kubernetes Serviceにデプロイする方法：https://zenn.dev/microsoft/articles/dify_on_azure
