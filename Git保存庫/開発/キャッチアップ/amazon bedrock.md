@@ -1,0 +1,4 @@
+- 公式サイト：https://aws.amazon.com/jp/bedrock/
+- Amazon Bedrockとは、[Amazon Web Services (AWS)](https://aws.amazon.com/jp/bedrock/faqs/)が提供する、複数の有力な生成AIモデルをAPI経由で簡単に利用できるフルマネージドサービスです。
+- https://qiita.com/zumax/items/ad61c2ae4cb767aff05f
+- AWS系のサービスでAIアプリを作るならbedrockが連携しやすくて便利、という理解。
