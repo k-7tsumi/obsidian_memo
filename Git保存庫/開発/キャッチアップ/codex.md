@@ -1,0 +1,2 @@
+- codex CLI：https://developers.openai.com/codex/cli
+- リポジトリ：https://github.com/openai/codex
