@@ -127,4 +127,4 @@ npm install npm install @vercel/edge-config
 - revalidatePath関数：https://nextjs.org/docs/app/api-reference/functions/revalidatePath
 - Next.jsでは、正確なセグメント名がわからず、データに基づいてルートを作成したい場合に[動的ルートセグメント](https://ja.nextjs.im/docs/app/building-your-application/routing/dynamic-routes)
 
-次はここから( [4. サーバーアクションに`id`を渡す](https://ja.nextjs.im/learn/dashboard-app/mutating-data#4-pass-the-id-to-the-server-action) )：https://ja.nextjs.im/learn/dashboard-app/mutating-data
+次はここから：https://ja.nextjs.im/learn/dashboard-app/error-handling
