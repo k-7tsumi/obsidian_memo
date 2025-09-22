@@ -297,6 +297,8 @@ $az container show --resource-group katakura_resource_group --name reservationsy
     - 目的はリスクを抑えつつ新機能を展開すること
     - 段階的なリリース
 - Kubernetes クラスターの API サーバーに対してコマンドを実行できる `kubectl` というコマンドライン アプリを使用します。 この API を提供するコンポーネントは `kube-apiserver` と呼ばれます。
+- ポッドは、Kubernetes で実行されているアプリの 1 つのインスタンスを表します。
+- コンテナーを、ポッドと呼ばれる Kubernetes オブジェクトにパッケージ化します。 ポッドは、Kubernetes で作成できる最小のオブジェクトです。
 
 
--  次はここから(ノードで実行されるサービス)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-kubernetes/3-how-kubernetes-works
+-  次はここから(ノードで実行されるサービス)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-kubernetes/5-exercise-kubernetes-functionality?pivots=macos
