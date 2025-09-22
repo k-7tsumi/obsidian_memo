@@ -178,6 +178,9 @@ $az acr create --resource-group katakura_resource_group2 --name difyapp --sku Bs
 	- https://hub.docker.com/r/langgenius/dify-api
 - 何のページ。。？：https://douban.github.io/charts/
 	- https://github.com/douban/charts
+- [Ingress](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.34/#ingress-v1-networking-k8s-io)はクラスター外からクラスター内[Service](https://kubernetes.io/ja/docs/concepts/services-networking/service/)へのHTTPとHTTPSのルートを公開します。トラフィックのルーティングはIngressリソース上で定義されるルールによって制御されます。
+- Kubernetesの公式ドキュメント：https://kubernetes.io/ja/docs/concepts/services-networking/ingress/
+- AKSのドキュメント：https://learn.microsoft.com/ja-jp/azure/aks/concepts-network-ingress
 
-次はここから(イングレス設定のvalues.yamlを確認する):
+次はここから(values.yaml の設定で気になるところを確認してデプロイしてみる。):
 - Difyで作ったLLM ApplicationをAzure Kubernetes Serviceにデプロイする方法：https://zenn.dev/microsoft/articles/dify_on_azure
