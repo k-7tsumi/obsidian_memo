@@ -48,5 +48,9 @@ print(response)
 	- ReActは「Reasoning and Acting」の略で、大言語モデル（LLM）が思考（Thought）→行動（Action）→観察（Observation）のサイクルを繰り返すことで、複雑なタスクを段階的に解決するパターンです。
 	- https://qiita.com/yukiaprogramming/items/6599fdcf284e5481ecc4
 - LangGraphのcreate_react_agentの公式ドキュメント：https://python.langchain.com/api_reference/langchain/agents/langchain.agents.react.agent.create_react_agent.html
+- pydantic_settingsとは
+	- https://docs.pydantic.dev/latest/concepts/pydantic_settings/
+	- https://qiita.com/inetcpl/items/b4146b9e8e1adad239d8
+	- Pydantic Settingsは、[Pydantic](https://docs.pydantic.dev/latest/)ライブラリの一部であり、設定管理を型安全かつ簡潔に行うための強力なツールです。
 
 次はここから：技術書読みながら、AIエージェントの作り方を学ぶ。

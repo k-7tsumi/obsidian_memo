@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1e1427c1f339a63d",
+        "id": "641fac4220b6b204",
         "type": "tabs",
         "children": [
           {
-            "id": "3139bd6d846f92a7",
+            "id": "77b2b192a627daef",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -183,17 +183,18 @@
       "recipe-view:Toggle recipe view": false
     }
   },
-  "active": "3139bd6d846f92a7",
+  "active": "77b2b192a627daef",
   "lastOpenFiles": [
-    "開発/React_Nextjs/Next.js チュートリアル.md",
+    "開発/AI勉強/AI技術書/Chapter4の設計でアプリを作る.md",
+    "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
+    "IMG_1094.jpg",
     "デイリーノート/2025-09-23.md",
+    "開発/React_Nextjs/Next.js チュートリアル.md",
     "開発/インフラ/Azure/Azure Kubernetes Service (AKS).md",
     "開発/インフラ/Azure/Azureで何する？メモ.md",
     "開発/AI勉強/Dify/RAGアプリ作り.md",
     "スクリーンショット 2025-09-23 16.12.51.png",
     "開発/AI勉強/Dify/ナレッジベース(RAG)の検索設定まとめ.md",
-    "開発/AI勉強/AI技術書/Chapter4の設計でアプリを作る.md",
-    "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
     "TODO/テンプレート/勉強する日TODO.md",
     "デイリーノート/2025-09-22.md",
     "開発/キャッチアップ/vite.md",
@@ -229,7 +230,6 @@
     "スクリーンショット 2025-09-03 15.44.00.png",
     "スクリーンショット 2025-09-03 14.22.11.png",
     "スクリーンショット 2025-08-06 14.23.31.png",
-    "無題のファイル.canvas",
-    "スクリーンショット 2025-07-28 18.13.36.png"
+    "無題のファイル.canvas"
   ]
 }
