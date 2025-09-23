@@ -303,4 +303,4 @@ $az container show --resource-group katakura_resource_group --name reservationsy
 - ReplicationControllerは、指定された数のポッドレプリカが常に実行されていることを保証します。言い換えれば、ReplicationControllerは、ポッドまたは同種のポッドセットが常に稼働し、利用可能であることを保証します。
 
 
--  次はここから：https://learn.microsoft.com/ja-jp/training/modules/intro-to-kubernetes/7-summary
+-  次はここから：https://learn.microsoft.com/ja-jp/training/modules/intro-to-azure-kubernetes-service/

@@ -126,5 +126,8 @@ npm install npm install @vercel/edge-config
 - TypeScript ファーストの型検証ライブラリ「Zod」とは？：https://qiita.com/naoyuki2/items/b64dadd21d86facb5375
 - revalidatePath関数：https://nextjs.org/docs/app/api-reference/functions/revalidatePath
 - Next.jsでは、正確なセグメント名がわからず、データに基づいてルートを作成したい場合に[動的ルートセグメント](https://ja.nextjs.im/docs/app/building-your-application/routing/dynamic-routes)
+-  reset`: エラー境界をリセットする関数です。実行すると、ルートセグメントの再レンダリングを試みます。
+- セマンティック要素とは：https://webst8.com/code/html-semantics/
+- 支援技術(AT)とは：https://ja.wikipedia.org/wiki/%E6%94%AF%E6%8F%B4%E6%8A%80%E8%A1%93
 
-次はここから：https://ja.nextjs.im/learn/dashboard-app/error-handling
+次はここから( [フォームアクセシビリティの向上](https://ja.nextjs.im/learn/dashboard-app/improving-accessibility#improving-form-accessibility) )：https://ja.nextjs.im/learn/dashboard-app/improving-accessibility
