@@ -181,6 +181,68 @@ $az acr create --resource-group katakura_resource_group2 --name difyapp --sku Bs
 - [Ingress](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.34/#ingress-v1-networking-k8s-io)はクラスター外からクラスター内[Service](https://kubernetes.io/ja/docs/concepts/services-networking/service/)へのHTTPとHTTPSのルートを公開します。トラフィックのルーティングはIngressリソース上で定義されるルールによって制御されます。
 - Kubernetesの公式ドキュメント：https://kubernetes.io/ja/docs/concepts/services-networking/ingress/
 - AKSのドキュメント：https://learn.microsoft.com/ja-jp/azure/aks/concepts-network-ingress
+- macOS上でのkubectlのインストールおよびセットアップ：https://kubernetes.io/ja/docs/tasks/tools/install-kubectl-macos/
+- KubernetesクライアントkubectlからAKSに接続手順について: https://qiita.com/okcoder/items/e94a6463bc8d80cc0252
 
-次はここから(values.yaml の設定で気になるところを確認してデプロイしてみる。):
+クラスター認証情報の取得が必要だったぽい。
+
+```
+$az aks get-credentials --resource-group katakura_resource_group2 --name dify-app
+
+Merged "dify-app" as current context in /Users/katakuranatsumi/.kube/config
+```
+
+AKSに接続できた。
+```
+$kubectl cluster-info
+
+Kubernetes control plane is running at https://dify-app-katakuraresource-b3c720-4r1j4pv1.hcp.eastasia.azmk8s.io:443
+
+CoreDNS is running at https://dify-app-katakuraresource-b3c720-4r1j4pv1.hcp.eastasia.azmk8s.io:443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+Metrics-server is running at https://dify-app-katakuraresource-b3c720-4r1j4pv1.hcp.eastasia.azmk8s.io:443/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+```
+
+以下を実行したら色々入った。
+```
+$ helm upgrade dify douban/dify -f values.yaml --install --debug
+```
+
+![[スクリーンショット 2025-09-23 16.12.51.png]]
+
+```
+$kubectl get services -n default
+
+NAME                  TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)             AGE
+dify-api-svc          ClusterIP   10.0.236.88    <none>        80/TCP              4m18s
+dify-frontend         ClusterIP   10.0.151.39    <none>        80/TCP              4m18s
+dify-minio            ClusterIP   10.0.138.60    <none>        9000/TCP,9001/TCP   4m18s
+dify-plugin-daemon    ClusterIP   10.0.87.132    <none>        5002/TCP            4m18s
+dify-postgresql       ClusterIP   10.0.134.221   <none>        5432/TCP            4m18s
+dify-postgresql-hl    ClusterIP   None           <none>        5432/TCP            4m18s
+dify-redis-headless   ClusterIP   None           <none>        6379/TCP            4m18s
+dify-redis-master     ClusterIP   10.0.157.192   <none>        6379/TCP            4m18s
+dify-sandbox          ClusterIP   10.0.219.40    <none>        80/TCP              4m18s
+kubernetes            ClusterIP   10.0.0.1       <none>        443/TCP             3d1h
+```
+
+```
+$kubectl get pods -n default
+
+NAME                                  READY   STATUS    RESTARTS   AGE
+dify-api-769fdbc4f4-p459z             1/1     Running   0          5m3s
+dify-frontend-6c9c6f676d-5fmr4        1/1     Running   0          5m4s
+dify-minio-587f5d9fb7-5jkx2           1/1     Running   0          5m4s
+dify-plugin-daemon-744bfb4b74-zmzlk   1/1     Running   0          5m4s
+dify-postgresql-0                     1/1     Running   0          5m3s
+dify-redis-master-0                   1/1     Running   0          5m3s
+dify-sandbox-bdcbd5ddf-dhltv          1/1     Running   0          5m3s
+dify-worker-5676b6869d-fnvj7          1/1     Running   0          5m4s
+```
+
+- Azure ロールベースのアクセス制御を使用して、Azure Kubernetes Service (AKS) 内の Kubernetes 構成ファイルへのアクセス権を定義する：https://learn.microsoft.com/ja-jp/azure/aks/control-kubeconfig-access
+
+次はここから(kubectl get pods -n defaultコマンドなどを確認してから先に進む):
 - Difyで作ったLLM ApplicationをAzure Kubernetes Serviceにデプロイする方法：https://zenn.dev/microsoft/articles/dify_on_azure
