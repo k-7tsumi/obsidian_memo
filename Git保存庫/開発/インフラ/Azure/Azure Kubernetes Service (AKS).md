@@ -299,6 +299,8 @@ $az container show --resource-group katakura_resource_group --name reservationsy
 - Kubernetes クラスターの API サーバーに対してコマンドを実行できる `kubectl` というコマンドライン アプリを使用します。 この API を提供するコンポーネントは `kube-apiserver` と呼ばれます。
 - ポッドは、Kubernetes で実行されているアプリの 1 つのインスタンスを表します。
 - コンテナーを、ポッドと呼ばれる Kubernetes オブジェクトにパッケージ化します。 ポッドは、Kubernetes で作成できる最小のオブジェクトです。
+- `kubectl scale` コマンド = 指定したReplicationControllerのサイズを更新します。
+- ReplicationControllerは、指定された数のポッドレプリカが常に実行されていることを保証します。言い換えれば、ReplicationControllerは、ポッドまたは同種のポッドセットが常に稼働し、利用可能であることを保証します。
 
 
--  次はここから(ノードで実行されるサービス)：https://learn.microsoft.com/ja-jp/training/modules/intro-to-kubernetes/5-exercise-kubernetes-functionality?pivots=macos
+-  次はここから：https://learn.microsoft.com/ja-jp/training/modules/intro-to-kubernetes/7-summary
