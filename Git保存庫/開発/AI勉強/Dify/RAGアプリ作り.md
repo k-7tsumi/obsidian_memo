@@ -243,6 +243,34 @@ dify-worker-5676b6869d-fnvj7          1/1     Running   0          
 ```
 
 - Azure ロールベースのアクセス制御を使用して、Azure Kubernetes Service (AKS) 内の Kubernetes 構成ファイルへのアクセス権を定義する：https://learn.microsoft.com/ja-jp/azure/aks/control-kubeconfig-access
+- flaskとは：https://www.miraiserver.ne.jp/column/about_flask/
+- DB migration
+```
+$kubectl exec -it dify-api-769fdbc4f4-p459z -- flask db upgrade
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+```
+- 以下を実行
+```
+$kubectl apply -f dify-ingress.yaml
+**Warning:** annotation "kubernetes.io/ingress.class" is deprecated, please use 'spec.ingressClassName' instead
+ingress.networking.k8s.io/dify-ingress created
+```
+- 情報が古そうだったので、以下に修正して再度実行
+
+dify-ingress.yaml
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dify-ingress
+  annotations:
+spec.ingressClassName: webapprouting.kubernetes.azure.com
+```
 
 次はここから(kubectl get pods -n defaultコマンドなどを確認してから先に進む):
 - Difyで作ったLLM ApplicationをAzure Kubernetes Serviceにデプロイする方法：https://zenn.dev/microsoft/articles/dify_on_azure
+
+画面は出たけど、インストール中。。しばらく待ってみる。
+
+![[スクリーンショット 2025-09-24 14.02.45.png]]
