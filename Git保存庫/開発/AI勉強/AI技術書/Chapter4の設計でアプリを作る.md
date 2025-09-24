@@ -52,5 +52,6 @@ print(response)
 	- https://docs.pydantic.dev/latest/concepts/pydantic_settings/
 	- https://qiita.com/inetcpl/items/b4146b9e8e1adad239d8
 	- Pydantic Settingsは、[Pydantic](https://docs.pydantic.dev/latest/)ライブラリの一部であり、設定管理を型安全かつ簡潔に行うための強力なツールです。
+- typingとは：https://docs.python.org/ja/3/library/typing.html
 
 次はここから：技術書読みながら、AIエージェントの作り方を学ぶ。
