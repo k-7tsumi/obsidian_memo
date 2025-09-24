@@ -129,5 +129,8 @@ npm install npm install @vercel/edge-config
 -  reset`: エラー境界をリセットする関数です。実行すると、ルートセグメントの再レンダリングを試みます。
 - セマンティック要素とは：https://webst8.com/code/html-semantics/
 - 支援技術(AT)とは：https://ja.wikipedia.org/wiki/%E6%94%AF%E6%8F%B4%E6%8A%80%E8%A1%93
+- useActionState：https://ja.react.dev/reference/react/useActionState
+	- `useActionState` は、フォームアクションの結果に基づいて state を更新するためのフックです。
+- へー。：すべてのフックはクライアントサイドでのみ動作し、サーバーコンポーネントでは使用できません
 
-次はここから( [フォームアクセシビリティの向上](https://ja.nextjs.im/learn/dashboard-app/improving-accessibility#improving-form-accessibility) )：https://ja.nextjs.im/learn/dashboard-app/improving-accessibility
+次はここから( `action.ts`ファイルで、Zodを使用してフォームデータを検証できます。`FormSchema`を以下のように更新します： )：https://ja.nextjs.im/learn/dashboard-app/improving-accessibility
