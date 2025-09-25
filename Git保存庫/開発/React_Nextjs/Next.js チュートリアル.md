@@ -132,5 +132,6 @@ npm install npm install @vercel/edge-config
 - useActionState：https://ja.react.dev/reference/react/useActionState
 	- `useActionState` は、フォームアクションの結果に基づいて state を更新するためのフックです。
 - へー。：すべてのフックはクライアントサイドでのみ動作し、サーバーコンポーネントでは使用できません
+- aria-describedby：https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby
 
-次はここから( `action.ts`ファイルで、Zodを使用してフォームデータを検証できます。`FormSchema`を以下のように更新します： )：https://ja.nextjs.im/learn/dashboard-app/improving-accessibility
+次はここから( 上記のコードでは、以下のariaラベルも追加しています： )：https://ja.nextjs.im/learn/dashboard-app/improving-accessibility

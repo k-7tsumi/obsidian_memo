@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 285.5
   },
   "right": {
     "id": "7b90df38e253ec59",
@@ -185,10 +185,11 @@
   },
   "active": "77b2b192a627daef",
   "lastOpenFiles": [
+    "開発/React_Nextjs/Next.js チュートリアル.md",
+    "デイリーノート/2025-09-25.md",
     "開発/インフラ/Azure/Azure Kubernetes Service (AKS).md",
     "開発/AI勉強/Dify/RAGアプリ作り.md",
     "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門.md",
-    "デイリーノート/2025-09-25.md",
     "スクリーンショット 2025-09-25 14.32.46.png",
     "開発/AI勉強/Dify/ナレッジベース(RAG)の検索設定まとめ.md",
     "開発/AI勉強/AI技術書/Chapter4の設計でアプリを作る.md",
@@ -197,7 +198,6 @@
     "デイリーノート/2025-09-24.md",
     "開発/キャッチアップ/キャッチアップ候補.md",
     "開発/キャッチアップ/vite + AWS bedrockでなんか作る.md",
-    "開発/React_Nextjs/Next.js チュートリアル.md",
     "開発/AI勉強/Dify/Difyのドキュメント読む.md",
     "スクリーンショット 2025-09-24 14.02.45.png",
     "デイリーノート/2025-09-23.md",
