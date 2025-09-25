@@ -274,3 +274,12 @@ spec.ingressClassName: webapprouting.kubernetes.azure.com
 画面は出たけど、インストール中。。しばらく待ってみる。
 
 ![[スクリーンショット 2025-09-24 14.02.45.png]]
+
+- values.yamlを以下のように変えたら使えるようになった。
+
+```
+global:
+  host: '20.6.176.164'
+```
+
+![[スクリーンショット 2025-09-25 14.32.46.png]]
