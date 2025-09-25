@@ -301,7 +301,6 @@ $az container show --resource-group katakura_resource_group --name reservationsy
 - コンテナーを、ポッドと呼ばれる Kubernetes オブジェクトにパッケージ化します。 ポッドは、Kubernetes で作成できる最小のオブジェクトです。
 - `kubectl scale` コマンド = 指定したReplicationControllerのサイズを更新します。
 - ReplicationControllerは、指定された数のポッドレプリカが常に実行されていることを保証します。言い換えれば、ReplicationControllerは、ポッドまたは同種のポッドセットが常に稼働し、利用可能であることを保証します。
+- Kubernetesオブジェクト(マニフェスト)について：https://kubernetes.io/ja/docs/concepts/overview/working-with-objects/kubernetes-objects/
 
-
--  次はここから( コンテナー レジストリとは )：[https://learn.microsoft.com/ja-jp/training/modules/aks-deploy-container-app/4-deploy-app](https://learn.microsoft.com/ja-jp/training/modules/aks-deploy-container-app/4-deploy-app)
-- 
+-  次はここから( マニフェストを適用する )：https://learn.microsoft.com/ja-jp/training/modules/aks-deploy-container-app/5-exercise-deploy-app
