@@ -302,5 +302,5 @@ $az container show --resource-group katakura_resource_group --name reservationsy
 - `kubectl scale` コマンド = 指定したReplicationControllerのサイズを更新します。
 - ReplicationControllerは、指定された数のポッドレプリカが常に実行されていることを保証します。言い換えれば、ReplicationControllerは、ポッドまたは同種のポッドセットが常に稼働し、利用可能であることを保証します。
 - Kubernetesオブジェクト(マニフェスト)について：https://kubernetes.io/ja/docs/concepts/overview/working-with-objects/kubernetes-objects/
-
--  次はここから( マニフェストを適用する )：https://learn.microsoft.com/ja-jp/training/modules/aks-deploy-container-app/5-exercise-deploy-app
+- Kubernetesに腰を据えて入門する方向けのロードマップ：https://qiita.com/riita10069/items/292c90b008e3714ee88b
+	- ↑とりあえず、これを読みつつ理解を深めよう。
