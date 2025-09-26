@@ -283,3 +283,13 @@ global:
 ```
 
 ![[スクリーンショット 2025-09-25 14.32.46.png]]
+
+- はじめての AKS によるサービス公開：https://qiita.com/eternity1984/items/ae6e5684fd7b02aa23e4
+
+### Azure DNSでやったこと
+
+#### 事前準備
+- ドメイン取得(私は https://www.xserver.ne.jp/)
+
+1. DNS ゾーンの作成
+	1. インスタンスの名前には取得したドメイン名を入れる。
