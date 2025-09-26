@@ -54,5 +54,6 @@ print(response)
 	- Pydantic Settingsは、[Pydantic](https://docs.pydantic.dev/latest/)ライブラリの一部であり、設定管理を型安全かつ簡潔に行うための強力なツールです。
 - typingとは：https://docs.python.org/ja/3/library/typing.html
 - 型ヒントは変数にも設定できる：https://qiita.com/shun_sakamoto/items/65edc36e7f5a6f9d52b8#%E5%A4%89%E6%95%B0%E3%81%AE%E5%9E%8B%E5%AE%9A%E7%BE%A9
+- Pydanticとは：https://qiita.com/Tadataka_Takahashi/items/8b28f49d67d7e1d65d11
 
 次はここから：技術書読みながら、AIエージェントの作り方を学ぶ。
