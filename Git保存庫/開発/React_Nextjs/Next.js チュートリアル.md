@@ -134,4 +134,9 @@ npm install npm install @vercel/edge-config
 - へー。：すべてのフックはクライアントサイドでのみ動作し、サーバーコンポーネントでは使用できません
 - aria-describedby：https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby
 
-次はここから( 上記のコードでは、以下のariaラベルも追加しています： )：https://ja.nextjs.im/learn/dashboard-app/improving-accessibility
+次はここから：[Next.js Middlewareでルートを保護](https://ja.nextjs.im/learn/dashboard-app/adding-authentication#protecting-your-routes-with-nextjs-middleware)
+
+
+## **MUST**
+- vercelに認証機能デプロイする時、環境変数追加作業(AUTH_SECRET)を忘れない。
+	- https://vercel.com/docs/environment-variables
