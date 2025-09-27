@@ -133,8 +133,10 @@ npm install npm install @vercel/edge-config
 	- `useActionState` は、フォームアクションの結果に基づいて state を更新するためのフックです。
 - へー。：すべてのフックはクライアントサイドでのみ動作し、サーバーコンポーネントでは使用できません
 - aria-describedby：https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby
+- Next.jsのMiddlewareと友達になろう：https://zenn.dev/maiamitorio/articles/992981cce5d194
 
-次はここから：[Next.js Middlewareでルートを保護](https://ja.nextjs.im/learn/dashboard-app/adding-authentication#protecting-your-routes-with-nextjs-middleware)
+次はここから：[サインイン機能の追加](https://ja.nextjs.im/learn/dashboard-app/adding-authentication#adding-the-sign-in-functionality)
+
 
 
 ## **MUST**
