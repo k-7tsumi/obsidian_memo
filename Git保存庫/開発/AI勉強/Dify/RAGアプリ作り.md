@@ -306,4 +306,71 @@ global:
 ```
 $helm upgrade dify douban/dify -f values.yaml --install --debug
 ```
-5. 
+5. dify-ingress.yamlの修正
+
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dify-ingress
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+  ingressClassName: webapprouting.kubernetes.azure.com
+  rules:
+    - host: dify.katakuriko77.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: dify-frontend
+                port:
+                  number: 80
+          - path: /console/api
+            pathType: Prefix
+            backend:
+              service:
+                name: dify-api-svc
+                port:
+                  number: 80
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: dify-api-svc
+                port:
+                  number: 80
+          - path: /v1
+            pathType: Prefix
+            backend:
+              service:
+                name: dify-api-svc
+                port:
+                  number: 80
+          - path: /files
+            pathType: Prefix
+            backend:
+              service:
+                name: dify-api-svc
+                port:
+                  number: 80
+```
+
+dify-ingress.yamlの適用
+```
+$ kubectl apply -f dify-ingress.yaml
+```
+
+
+## !!重要!!AKS起動した後やる必要があること
+1. apiの名前確認(dify-api が冒頭のものを探す)
+```
+$kubectl get pods --show-labels
+```
+1. DB migration
+   
+```
+$ kubectl exec -it dify-api-5f88b4456b-b29xh -- flask db upgrade
+```
