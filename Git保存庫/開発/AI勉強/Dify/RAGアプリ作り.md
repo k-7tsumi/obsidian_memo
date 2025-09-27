@@ -293,3 +293,17 @@ global:
 
 1. DNS ゾーンの作成
 	1. インスタンスの名前には取得したドメイン名を入れる。
+2. XserverのネームサーバにAzure DNSのネームサーバを設定
+3. DNSゾーンにAレコードで追加
+4. values.yamlを以下に変更
+
+```
+global:
+  host: 'dify.katakuriko77.com'
+```
+
+変更を適用
+```
+$helm upgrade dify douban/dify -f values.yaml --install --debug
+```
+5. 
