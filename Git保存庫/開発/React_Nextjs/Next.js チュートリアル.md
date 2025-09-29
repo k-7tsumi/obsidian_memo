@@ -136,7 +136,7 @@ npm install npm install @vercel/edge-config
 - Next.jsのMiddlewareと友達になろう：https://zenn.dev/maiamitorio/articles/992981cce5d194
 - NextAuthのエラー：https://authjs.dev/reference/core/errors
 
-次はここから：[サインイン機能の追加](https://ja.nextjs.im/learn/dashboard-app/adding-authentication#adding-the-sign-in-functionality)
+次はここから：[ログアウト機能の追加](https://ja.nextjs.im/learn/dashboard-app/adding-authentication#adding-the-logout-functionality)
 
 ## **MUST**
 - vercelに認証機能デプロイする時、環境変数追加作業(AUTH_SECRET)を忘れない。
