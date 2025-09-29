@@ -304,3 +304,4 @@ $az container show --resource-group katakura_resource_group --name reservationsy
 - Kubernetesオブジェクト(マニフェスト)について：https://kubernetes.io/ja/docs/concepts/overview/working-with-objects/kubernetes-objects/
 - Kubernetesに腰を据えて入門する方向けのロードマップ：https://qiita.com/riita10069/items/292c90b008e3714ee88b
 	- ↑とりあえず、これを読みつつ理解を深めよう。
+- AKSのstateful set：https://learn.microsoft.com/ja-jp/azure/aks/stateful-workloads-overview
