@@ -100,7 +100,7 @@ $az aks create --resource-group katakura_resource_group2 --name dify-app --tier 
 
 ![[スクリーンショット 2025-09-20 15.03.40.png]]
 
-以下コマンドでCR作成成功
+以下コマンドでACR作成成功
 ```
 $az acr create --resource-group katakura_resource_group2 --name difyapp --sku Bsic
 
