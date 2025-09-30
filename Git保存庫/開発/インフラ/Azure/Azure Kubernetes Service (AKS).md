@@ -306,3 +306,4 @@ $az container show --resource-group katakura_resource_group --name reservationsy
 	- ↑とりあえず、これを読みつつ理解を深めよう。
 - AKSのstateful set：https://learn.microsoft.com/ja-jp/azure/aks/stateful-workloads-overview
 - IngressはKubernetesリソースの一つで、L7ロードバランシングの機能を提供している。
+- L4/L7 ロードバランサーを理解する：https://qiita.com/v1tam1n/items/3a3d57c18bc25b6a760b
