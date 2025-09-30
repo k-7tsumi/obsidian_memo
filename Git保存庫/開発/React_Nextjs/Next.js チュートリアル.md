@@ -135,8 +135,9 @@ npm install npm install @vercel/edge-config
 - aria-describedby：https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby
 - Next.jsのMiddlewareと友達になろう：https://zenn.dev/maiamitorio/articles/992981cce5d194
 - NextAuthのエラー：https://authjs.dev/reference/core/errors
+- Next.jsには、アプリケーションのメタデータを定義するために使用できるMetadata APIがあります。アプリケーションにメタデータを追加する方法は2つあります
 
-次はここから：[ログアウト機能の追加](https://ja.nextjs.im/learn/dashboard-app/adding-authentication#adding-the-logout-functionality)
+次はここから(メタタグがbodyタグに入る問題の調査)：[ページタイトルと説明](https://ja.nextjs.im/learn/dashboard-app/adding-metadata#page-title-and-descriptions)
 
 ## **MUST**
 - vercelに認証機能デプロイする時、環境変数追加作業(AUTH_SECRET)を忘れない。
