@@ -376,6 +376,6 @@ $ kubectl exec -it dify-api-5f88b4456b-b29xh -- flask db upgrade
 ```
 
 参照サイト：
-- https://zenn.dev/microsoft/articles/dify_on_azure#azure-kubernetes-service-%E3%81%B8-deploy
+- https://zenn.dev/microsoft/articles/dify_on_azure
 - https://qiita.com/okcoder/items/e94a6463bc8d80cc0252
 - https://learn.microsoft.com/ja-jp/azure/aks/app-routing
