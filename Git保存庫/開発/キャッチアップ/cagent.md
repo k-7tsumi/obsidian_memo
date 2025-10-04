@@ -48,17 +48,74 @@ $ cagent run ./examples/pirate.yaml
 
 ## コマンドシェルを調べられるエージェントを作成する
 
-Docker CLI Pluginをインストールする。
+## 事前準備
+
+DockerのMCP toolkitでDuckDuckGoを追加しておく。
+
+![[スクリーンショット 2025-10-04 22.15.46 1.png]]
+
+以下yamlファイルを用意
+
+examples/command_helper.yaml
 
 ```
-# リポジトリをクローン
-$ git clone https://github.com/docker/mcp-gateway.git
-$ cd mcp-gateway
-$ mkdir -p "$HOME/.docker/cli-plugins/"
+#!/usr/bin/env cagent run
 
-# プラグインをインストールしてビルド
-$ make docker-mcp
-# コマンドを使用できるか確認
-$ docker mcp --help
+version: "2"
+
+agents:
+root:
+model: openai/gpt-4o
+
+description: コマンドヘルパー - よく使うコマンドを検索・提示・実行するエージェント
+
+instruction: |
+
+あなたはcagentのコマンドを検索、説明、そして実行するヘルパーです。
+
+ユーザーが「どんなコマンドがあるか」「○○するコマンド」などを聞いてきた場合、
+
+以下のコマンドリストから適切なものを検索して提示してください。
+
+  
+
+ユーザーがコマンドの実行を依頼した場合は、shellツールを使って実際にコマンドを実行してください。
+
+実行前に、どのコマンドを実行するか確認し、必要に応じて説明を加えてください。
+
+  
+
+コマンドリストに無い情報や、最新の情報が必要な場合は、DuckDuckGoのWeb検索機能を使って情報を検索してください。
+
+  
+
+## コマンドリスト
+
+- `vi ~/.bashrc` - bashrcを開く
+
+- `vi ~/.bash_profile` - bash_profileを開く
+
+- `vi ~/mise.toml` - mise.tomlを開く
+
+- `vi ~/.claude/settings.json` - ~/.claude/settings.json(ユーザー設定)を開く
+
+  
+
+ユーザーの質問に対して、関連するコマンドを簡潔に説明してください。
+
+複数の関連コマンドがある場合は、すべてリストアップしてください。
+
+コマンドの実行が必要な場合は、適切に実行してください。
+
+toolsets:
+- type: think
+- type: shell
+- type: mcp
+  ref: docker:duckduckgo
 ```
 
+実行
+
+```
+$ cagent run command_helper.yaml
+```
