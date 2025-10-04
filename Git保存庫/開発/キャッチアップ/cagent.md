@@ -45,3 +45,20 @@ $ cagent run ./examples/pirate.yaml
 実行すると以下のような感じでやり取りができるようになる。
 
 ![[スクリーンショット 2025-10-04 17.28.57.png]]
+
+## コマンドシェルを調べられるエージェントを作成する
+
+Docker CLI Pluginをインストールする。
+
+```
+# リポジトリをクローン
+$ git clone https://github.com/docker/mcp-gateway.git
+$ cd mcp-gateway
+$ mkdir -p "$HOME/.docker/cli-plugins/"
+
+# プラグインをインストールしてビルド
+$ make docker-mcp
+# コマンドを使用できるか確認
+$ docker mcp --help
+```
+
