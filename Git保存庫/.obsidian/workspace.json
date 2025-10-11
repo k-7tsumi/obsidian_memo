@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "デイリーノート/2025-10-11.md",
+                "file": "デイリーノート/2025-10-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-11"
+              "title": "2025-10-10"
             }
           }
         ]
@@ -185,9 +185,11 @@
   },
   "active": "684fc25cef60c998",
   "lastOpenFiles": [
+    "デイリーノート/2025-10-11.md",
+    "開発/AI勉強/RAG/文書事務の手引きRAGメモ.md",
+    "開発/AI勉強/RAG",
     "開発/AI勉強/Dify/RAGアプリ作り.md",
     "開発/インフラ/Azure/Azure Kubernetes Service (AKS).md",
-    "デイリーノート/2025-10-11.md",
     "小説/小説案①/原稿.md",
     "小説/小説案①/メモ.md",
     "デイリーノート/2025-10-10.md",
@@ -216,7 +218,6 @@
     "IMG_1195 1.jpg",
     "IMG_1195.jpg",
     "IMG_1194.jpg",
-    "kindle本/津野香奈美-パワハラ上司を科学する.md",
     "IMG_1094.jpg",
     "開発/AI勉強/AI技術書/現場で活躍するためのAIエージェント実践入門",
     "スクリーンショット 2025-10-05 20.11.33.png",
@@ -230,7 +231,6 @@
     "TODO/テンプレート",
     "TODO",
     "開発/インフラ/Azure",
-    "開発/インフラ",
     "無題のファイル.canvas"
   ]
 }
