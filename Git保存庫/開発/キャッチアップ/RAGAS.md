@@ -12,7 +12,7 @@
 $ uv init test-ragas-project
 ```
 
-ragasを追加
+ragas、langchain-openaiを追加
 
 ```
 $ uv add ragas langchain-openai
@@ -109,7 +109,7 @@ ragas.embeddings.OpenAIEmbeddings は、一部の LangChain ラッパーのよ�
 - 関連ドキュメントを取得するメソッドを定義する 
 - レスポンスを生成するメソッドを定義する
 
-###### ドキュメントを読み込む
+##### ドキュメントを読み込む
 
 それでは、いくつかのドキュメントを読み込んで、RAG システムをテストしてみましょう。
 
@@ -122,4 +122,7 @@ sample_docs = [
     "Ada Lovelace is regarded as the first computer programmer for her work on Charles Babbage's early mechanical computer, the Analytical Engine."
 ]
 ```
+
+##### 評価データを収集する
+評価データを収集するには、まずRAGに対して実行するクエリのセットが必要です。これらのクエリをRAGシステムで実行し、各クエリに対する応答と取得されたコンテキストを収集します。システムの性能を評価するために、各クエリに対するゴールデンアンサーのセットを任意で準備することも可能です。
 
