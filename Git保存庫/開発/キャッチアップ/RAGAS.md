@@ -15,9 +15,111 @@ $ uv init test-ragas-project
 ragasを追加
 
 ```
-$ uv add ragas
+$ uv add ragas langchain-openai
+```
+
+main.pyを以下のように設定
+
+main.py
+```
+from langchain_openai import ChatOpenAI
+from ragas.embeddings import OpenAIEmbeddings
+import openai
+
+def main():
+	llm = ChatOpenAI(model="gpt-4o")
+	openai_client = openai.OpenAI()
+	embeddings = OpenAIEmbeddings(client=openai_client)
+
+if __name__ == "__main__":
+	main()
+```
+
+src/rag.py
+```
+import numpy as np
+class RAG:
+	def __init__(self, model="gpt-4o"):
+		import openai
+		self.llm = ChatOpenAI(model=model)
+		openai_client = openai.OpenAI()
+		self.embeddings = OpenAIEmbeddings(client=openai_client)
+		self.doc_embeddings = None
+		self.docs = None
+		
+	def load_documents(self, documents):
+		"""Load documents and compute their embeddings."""
+		self.docs = documents
+		self.doc_embeddings = self.embeddings.embed_texts(documents)
+
+	def get_most_relevant_docs(self, query):
+		"""Find the most relevant document for a given query."""
+		if not self.docs or not self.doc_embeddings:
+		raise ValueError("Documents and their embeddings are not loaded.")
+
+	query_embedding = self.embeddings.embed_text(query)
+	similarities = [
+		np.dot(query_embedding, doc_emb)
+		/ (np.linalg.norm(query_embedding) * np.linalg.norm(doc_emb))
+		for doc_emb in self.doc_embeddings
+	]
+
+	most_relevant_doc_index = np.argmax(similarities)
+	return [self.docs[most_relevant_doc_index]]
+	
+	def generate_answer(self, query, relevant_doc):
+		"""Generate an answer for a given query based on the most relevant document."""
+		prompt = f"question: {query}\n\nDocuments: {relevant_doc}"
+		messages = [
+		("system", "You are a helpful assistant that answers questions based on given documents only."),
+		("human", prompt),
+		]
+		ai_msg = self.llm.invoke(messages)
+		return ai_msg.content
 ```
 
 ## https://docs.ragas.io/en/stable/getstarted/rag_eval/ の翻訳
 
-s
+### シンプルなRAGシステムを評価する
+
+このガイドの目的は、RAGシステムをRAGSでテストおよび評価するためのシンプルなワークフローを説明することです。RAGシステムの構築と評価に関する最低限の知識があることを前提としています。RAGSのインストールについては、当社のインストール手順を参照してください。
+
+#### 基本設定
+
+langchain_openaiを使用して、シンプルなRAG構築のためのLLMと埋め込みモデルを設定します。他のLLMや埋め込みモデルを選択することも可能です。その場合は、langchainにおけるモデルの
+カスタマイズを参照してください。
+
+```
+from langchain_openai import ChatOpenAI
+from ragas.embeddings import OpenAIEmbeddings
+import openai
+
+llm = ChatOpenAI(model="gpt-4o")
+openai_client = openai.OpenAI()
+embeddings = OpenAIEmbeddings(client=openai_client)
+```
+
+##### OpenAI Embeddings API
+ragas.embeddings.OpenAIEmbeddings は、一部の LangChain ラッパーのような embed_query/embed_documents ではなく、embed_text (単一) と embed_texts (バッチ) を公開します。以下の例では、ドキュメントにはembed_texts、クエリにはembed_textを使用しています。OpenAIの埋め込み実装を参照してください。
+
+#### シンプルなRAGシステムを構築する
+シンプルな RAG システムを構築するには、次のコンポーネントを定義する必要があります。
+
+- ドキュメントをベクトル化するメソッドを定義する 
+- 関連ドキュメントを取得するメソッドを定義する 
+- レスポンスを生成するメソッドを定義する
+
+###### ドキュメントを読み込む
+
+それでは、いくつかのドキュメントを読み込んで、RAG システムをテストしてみましょう。
+
+```
+sample_docs = [
+    "Albert Einstein proposed the theory of relativity, which transformed our understanding of time, space, and gravity.",
+    "Marie Curie was a physicist and chemist who conducted pioneering research on radioactivity and won two Nobel Prizes.",
+    "Isaac Newton formulated the laws of motion and universal gravitation, laying the foundation for classical mechanics.",
+    "Charles Darwin introduced the theory of evolution by natural selection in his book 'On the Origin of Species'.",
+    "Ada Lovelace is regarded as the first computer programmer for her work on Charles Babbage's early mechanical computer, the Analytical Engine."
+]
+```
+
