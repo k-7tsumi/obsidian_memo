@@ -43,6 +43,8 @@
 質問：前の結果を評価してから次に進む？
   ↓ YES → ✅ Thinkツール使用推奨！
   ↓ NO → Thinkツール不要
+```
+
 
 ## README翻訳( https://github.com/fdb02983rhy/dify-think-plugin )
 
