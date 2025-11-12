@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "デイリーノート/2025-11-11.md",
+                "file": "デイリーノート/2025-11-12.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-11"
+              "title": "2025-11-12"
             }
           }
         ]
@@ -185,8 +185,9 @@
   },
   "active": "684fc25cef60c998",
   "lastOpenFiles": [
-    "o.md",
     "デイリーノート/2025-11-11.md",
+    "デイリーノート/2025-11-12.md",
+    "o.md",
     "開発/AI勉強/Dify/ナレッジベース(RAG)の検索設定まとめ.md",
     "スクリーンショット 2025-10-28 22.42.18.png",
     "開発/キャッチアップ/CurrentTime(Dify プラグイン).md",
